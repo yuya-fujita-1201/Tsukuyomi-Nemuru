@@ -2,6 +2,49 @@
 
 最終更新: 2026-07-19
 
+## 2026-07-19 GitHub退避・AI演技の実時間30分監視基盤
+
+ユーザー指定の `https://github.com/yuya-fujita-1201/Tsukuyomi-Nemuru.git` は、修正着手前の
+承認済みv14一式を `main` の `6290235036c05ca4cfea4815f466f2ec48ac4e77`
+（`chore: preserve reviewed v14 baseline`）としてpushし、local / `git ls-remote` / GitHub APIの
+SHA一致を確認した。その後の監視実装は `agent/motion-performance-loop` で行い、
+`54c4a07`（監視基盤）と `4712343`（断続warning保持）へ分けてlocal commitした。
+
+`test/e2e_ai_motion_perf.py` はSystem Chromeの実tickerを止めず、`whisper` 13秒演技を2周する。
+音声OFF/ONはfresh pageへ分離し、rAF、Long Task、body/head atlas step、target-current追従誤差、
+cue/target変化からsettleまでの時間、blackout、非有限state、実音声再生/RMSを記録する。
+SwiftShader / llvmpipe、Chrome完全version・viewport・GPU・音声条件の不一致はコード回帰として
+扱わない。測定中のvideo/trace recordingは行わず、終了後の静止画とraw NDJSONだけを残す。
+
+`scripts/run_ai_motion_monitor.py` はproduction buildと一時preview 4174を使う。checkout lock、
+build 5分/probe 10分timeout、子process groupのTERM→KILL、予期しないdirty path停止、修正後に
+明示した `--expected-dirty-path` のみ許可、対象contentのbuild前/後/probe後SHA-256不変確認を持つ。
+履歴はbaselineのcampaign IDごとに分離し、初回warn/failはconfirmation、fatal/invalidは
+`stop-human`、自動修正最大3回、改善なし2回、最大6チェック、pass 2回で停止する。無効・fatalな
+計測はbaselineへ書かない。運用正本とScheduled用promptは `docs/ai-motion-monitor.md`。
+
+正式baseline `20260719T133009.338997Z` はcommit `4712343`、Chrome
+`150.0.7871.125`、Apple M4 Metal、39 texture / RGBA推定310.976MiBで採取した。OFF/ON各3回とも
+renderer/audio/integrityが有効で、blackout 0、非有限state 0、Long Task 0。中央値は次の通り。
+
+- 音声OFF: rAF p95 / p99 `18.6 / 18.6ms`、body max step `1.064`、body tracking p95
+  `0.161 turn`、settle p95 `818.7ms`
+- 音声ON: rAF p95 / p99 `18.5 / 18.6ms`、body max step `1.073`、body tracking p95
+  `0.158 turn`、settle p95 `816.805ms`、全3回でAudioContext running・時刻進行・RMS最大約0.645
+
+基準後の通常1巡 `20260719T133346.561029Z` もOFF/ONともpass、`nextAction=observe`。
+一方、探索runでは右向きcue付近に約66.4ms停止とbody step 3.456、最初の正式採取でも6回中2回に
+33.3ms級停止とstep 1.85〜1.93が出た。再採取6回では再現しなかったため、engine修正はまだ行わず、
+断続的な1 repeat warningをmedianで隠さない回帰を追加して30分監視へ引き継いだ。
+canonicalは `output/perf/baselines/current.json`、`latest.json`、`history.jsonl`。raw runと
+`preview.log` はGit ignore。
+
+監視追加後の確認は、motion Python 29/29、Web 69/69、coverage 行96.47%・分岐89.90%・
+関数98.67%、production build、smoke console error 0、eye matrix 5姿勢×6視線=30/30、
+v14眼品質13/13、全64frame横向き素材14/14。4173はHTTP 200で
+`index-m23XuXp3.js` を配信中。Scheduled管理UIはこの実行環境から操作できないため未作成。
+デスクトップアプリの現在チャット内・Local project・30分間隔で、文書内promptを登録する必要がある。
+
 ## 2026-07-19 右体3/4終端・近眼上アイラインの赤丸白ノッチ追補
 
 最新の赤丸添付は、実ブラウザの `body/right` frame 15・`gazeX=+1 / gazeY=0`

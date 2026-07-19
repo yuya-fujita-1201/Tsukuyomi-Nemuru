@@ -1,0 +1,2149 @@
+{
+  "schemaVersion": "ai-motion-monitor.v1",
+  "run": {
+    "id": "20260719T133009.338997Z",
+    "createdAt": "2026-07-19T13:30:09.339258+00:00",
+    "gitCommit": "471234323e09261d6911463dbf44e0b8e6b70c0c",
+    "gitDirty": true,
+    "profile": "system-chrome-headless",
+    "policy": "test/perf/motion-policy.v1.json",
+    "repairApplied": false,
+    "confirmation": false,
+    "campaignId": "20260719T133009.338997Z"
+  },
+  "scenarios": {
+    "whisper-audio-off": {
+      "status": "baseline",
+      "repairEligible": false,
+      "aggregate": {
+        "environment": {
+          "browser": "chrome",
+          "browserVersion": "150.0.7871.125",
+          "browserMajor": "150",
+          "viewport": "720x1280",
+          "deviceScaleFactor": 1,
+          "headless": true,
+          "audio": "off",
+          "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+          "webglVendor": "Google Inc. (Apple)",
+          "webglRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+          "observedRefreshRateHz": 60
+        },
+        "repeatCount": 3,
+        "summary": {
+          "frameCount": 1576.0,
+          "durationMs": 26247.7,
+          "frameIntervals": {
+            "meanMs": 16.666,
+            "p50Ms": 16.7,
+            "p95Ms": 18.6,
+            "p99Ms": 18.6,
+            "maxMs": 18.7,
+            "over33MsCount": 0.0,
+            "over50MsCount": 0.0,
+            "effectiveFps": 60.001
+          },
+          "bodyMotion": {
+            "maxFrameStep": 1.064,
+            "p95FrameStep": 0.825,
+            "skipCount": 1.0,
+            "trackingError": {
+              "sampleCount": 1576.0,
+              "p95": 0.161,
+              "max": 0.402,
+              "unit": "turn"
+            },
+            "settleLatency": {
+              "sampleCount": 16.0,
+              "p95Ms": 818.7,
+              "maxMs": 818.7,
+              "incompleteCount": 0.0,
+              "unit": "ms"
+            }
+          },
+          "headMotion": {
+            "maxFrameStep": 0.0,
+            "p95FrameStep": 0.0,
+            "skipCount": 0.0,
+            "trackingError": {
+              "sampleCount": 1576.0,
+              "p95": 0.087,
+              "max": 0.23,
+              "unit": "turn"
+            },
+            "settleLatency": {
+              "sampleCount": 16.0,
+              "p95Ms": 650.6,
+              "maxMs": 651.5,
+              "incompleteCount": 0.0,
+              "unit": "ms"
+            }
+          },
+          "longTasks": {
+            "count": 0.0,
+            "totalMs": 0.0,
+            "maxMs": 0.0
+          },
+          "cueTransitions": 8.0,
+          "blink": {
+            "sampleCount": 404.0,
+            "max": 0.996
+          }
+        },
+        "variability": {
+          "frameCount": {
+            "median": 1576.0,
+            "mad": 0.0,
+            "min": 1575.0,
+            "max": 1576.0
+          },
+          "durationMs": {
+            "median": 26247.7,
+            "mad": 1.5,
+            "min": 26233.0,
+            "max": 26249.2
+          },
+          "frameIntervals.meanMs": {
+            "median": 16.666,
+            "mad": 0.0,
+            "min": 16.666,
+            "max": 16.667
+          },
+          "frameIntervals.p50Ms": {
+            "median": 16.7,
+            "mad": 0.0,
+            "min": 16.7,
+            "max": 16.7
+          },
+          "frameIntervals.p95Ms": {
+            "median": 18.6,
+            "mad": 0.0,
+            "min": 18.5,
+            "max": 18.6
+          },
+          "frameIntervals.p99Ms": {
+            "median": 18.6,
+            "mad": 0.0,
+            "min": 18.6,
+            "max": 18.7
+          },
+          "frameIntervals.maxMs": {
+            "median": 18.7,
+            "mad": 0.0,
+            "min": 18.7,
+            "max": 18.7
+          },
+          "frameIntervals.over33MsCount": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "frameIntervals.over50MsCount": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "frameIntervals.effectiveFps": {
+            "median": 60.001,
+            "mad": 0.0,
+            "min": 60.001,
+            "max": 60.004
+          },
+          "bodyMotion.maxFrameStep": {
+            "median": 1.064,
+            "mad": 0.01,
+            "min": 1.001,
+            "max": 1.074
+          },
+          "bodyMotion.p95FrameStep": {
+            "median": 0.825,
+            "mad": 0.015,
+            "min": 0.806,
+            "max": 0.84
+          },
+          "bodyMotion.skipCount": {
+            "median": 1.0,
+            "mad": 0.0,
+            "min": 1.0,
+            "max": 2.0
+          },
+          "bodyMotion.trackingError.sampleCount": {
+            "median": 1576.0,
+            "mad": 0.0,
+            "min": 1575.0,
+            "max": 1576.0
+          },
+          "bodyMotion.trackingError.p95": {
+            "median": 0.161,
+            "mad": 0.0,
+            "min": 0.161,
+            "max": 0.162
+          },
+          "bodyMotion.trackingError.max": {
+            "median": 0.402,
+            "mad": 0.0,
+            "min": 0.402,
+            "max": 0.407
+          },
+          "bodyMotion.settleLatency.sampleCount": {
+            "median": 16.0,
+            "mad": 0.0,
+            "min": 12.0,
+            "max": 16.0
+          },
+          "bodyMotion.settleLatency.p95Ms": {
+            "median": 818.7,
+            "mad": 1.125,
+            "min": 817.575,
+            "max": 822.785
+          },
+          "bodyMotion.settleLatency.maxMs": {
+            "median": 818.7,
+            "mad": 0.0,
+            "min": 818.7,
+            "max": 832.3
+          },
+          "bodyMotion.settleLatency.incompleteCount": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "headMotion.maxFrameStep": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "headMotion.p95FrameStep": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "headMotion.skipCount": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "headMotion.trackingError.sampleCount": {
+            "median": 1576.0,
+            "mad": 0.0,
+            "min": 1575.0,
+            "max": 1576.0
+          },
+          "headMotion.trackingError.p95": {
+            "median": 0.087,
+            "mad": 0.0,
+            "min": 0.086,
+            "max": 0.087
+          },
+          "headMotion.trackingError.max": {
+            "median": 0.23,
+            "mad": 0.0,
+            "min": 0.23,
+            "max": 0.23
+          },
+          "headMotion.settleLatency.sampleCount": {
+            "median": 16.0,
+            "mad": 0.0,
+            "min": 14.0,
+            "max": 16.0
+          },
+          "headMotion.settleLatency.p95Ms": {
+            "median": 650.6,
+            "mad": 0.075,
+            "min": 650.525,
+            "max": 651.25
+          },
+          "headMotion.settleLatency.maxMs": {
+            "median": 651.5,
+            "mad": 0.5,
+            "min": 650.6,
+            "max": 652.0
+          },
+          "headMotion.settleLatency.incompleteCount": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "longTasks.count": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "longTasks.totalMs": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "longTasks.maxMs": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "cueTransitions": {
+            "median": 8.0,
+            "mad": 0.0,
+            "min": 8.0,
+            "max": 8.0
+          },
+          "blink.sampleCount": {
+            "median": 404.0,
+            "mad": 0.0,
+            "min": 404.0,
+            "max": 404.0
+          },
+          "blink.max": {
+            "median": 0.996,
+            "mad": 0.001,
+            "min": 0.995,
+            "max": 0.997
+          }
+        },
+        "runtime": {
+          "consoleErrors": [],
+          "pageErrors": []
+        },
+        "integrity": {
+          "blackoutCount": 0
+        }
+      },
+      "qualityGoals": {
+        "status": "pass",
+        "reasons": [],
+        "fatalReasons": [],
+        "warningReasons": [],
+        "repairEligible": false,
+        "goals": {
+          "minimumDurationRatio": 0.85,
+          "minimumFrames": 60,
+          "p95FrameIntervalMs": 40.0,
+          "p99FrameIntervalMs": 60.0,
+          "maxAtlasFrameStep": 1.25,
+          "maxTrackingErrorP95": 0.25,
+          "maxTrackingError": 0.65,
+          "maxSettleLatencyP95Ms": 1400.0,
+          "maxSettleLatencyMs": 1800.0,
+          "maxLongTasks": 0
+        }
+      },
+      "comparison": null,
+      "repeats": [
+        {
+          "environment": {
+            "browser": "chrome",
+            "browserVersion": "150.0.7871.125",
+            "browserMajor": "150",
+            "viewport": "720x1280",
+            "deviceScaleFactor": 1,
+            "headless": true,
+            "audio": "off",
+            "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+            "webglVendor": "Google Inc. (Apple)",
+            "webglRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+            "observedRefreshRateHz": 60
+          },
+          "metadata": {
+            "readyAtMs": 845.0999999642372,
+            "visibilityState": "visible",
+            "hasFocus": true,
+            "textureSourceCount": 39,
+            "textureRgbaBytes": 326082368,
+            "pixiResolution": 1,
+            "rendererWidth": 430,
+            "rendererHeight": 764,
+            "webglVendor": "Google Inc. (Apple)",
+            "webglRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+            "maxTextureSize": 16384,
+            "bundleNames": [
+              "index-m23XuXp3.js"
+            ],
+            "textureRgbaMiB": 310.976,
+            "scriptDurationSeconds": 13,
+            "loops": 2
+          },
+          "summary": {
+            "frameCount": 1576,
+            "durationMs": 26249.2,
+            "frameIntervals": {
+              "count": 1575,
+              "meanMs": 16.666,
+              "p50Ms": 16.7,
+              "p95Ms": 18.6,
+              "p99Ms": 18.7,
+              "maxMs": 18.7,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.001
+            },
+            "bodyMotion": {
+              "sampleCount": 1576,
+              "maxFrameStep": 1.064,
+              "p95FrameStep": 0.825,
+              "skipCount": 1,
+              "trackingError": {
+                "unit": "turn",
+                "sampleCount": 1576,
+                "p95": 0.161,
+                "max": 0.407
+              },
+              "settleLatency": {
+                "unit": "ms",
+                "sampleCount": 16,
+                "p95Ms": 817.575,
+                "maxMs": 818.7,
+                "incompleteCount": 0
+              }
+            },
+            "headMotion": {
+              "sampleCount": 1576,
+              "maxFrameStep": 0.0,
+              "p95FrameStep": 0.0,
+              "skipCount": 0,
+              "trackingError": {
+                "unit": "turn",
+                "sampleCount": 1576,
+                "p95": 0.086,
+                "max": 0.23
+              },
+              "settleLatency": {
+                "unit": "ms",
+                "sampleCount": 16,
+                "p95Ms": 650.6,
+                "maxMs": 650.6,
+                "incompleteCount": 0
+              }
+            },
+            "longTasks": {
+              "count": 0,
+              "totalMs": 0,
+              "maxMs": 0.0
+            },
+            "cueTransitions": 8,
+            "blink": {
+              "sampleCount": 404,
+              "max": 0.995
+            },
+            "tickerIntervals": {
+              "count": 1575,
+              "meanMs": 16.666,
+              "p50Ms": 16.7,
+              "p95Ms": 18.6,
+              "p99Ms": 18.8,
+              "maxMs": 20.2,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.002
+            },
+            "tickCpu": {
+              "count": 1530,
+              "meanMs": 0.198,
+              "p50Ms": 0.2,
+              "p95Ms": 0.4,
+              "p99Ms": 0.4,
+              "maxMs": 0.8,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 5054.509
+            },
+            "tickerDelta": {
+              "count": 1576,
+              "meanMs": 16.666,
+              "p50Ms": 16.7,
+              "p95Ms": 18.6,
+              "p99Ms": 18.7,
+              "maxMs": 18.7,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.001
+            },
+            "longAnimationFrames": {
+              "count": 0,
+              "totalBlockingMs": 0
+            },
+            "coldFrameIntervals": {
+              "count": 779,
+              "meanMs": 16.666,
+              "p50Ms": 16.7,
+              "p95Ms": 18.6,
+              "p99Ms": 18.7,
+              "maxMs": 18.7,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.001
+            },
+            "warmFrameIntervals": {
+              "count": 796,
+              "meanMs": 16.666,
+              "p50Ms": 16.7,
+              "p95Ms": 18.6,
+              "p99Ms": 18.7,
+              "maxMs": 18.7,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.001
+            }
+          },
+          "runtime": {
+            "consoleErrors": [],
+            "ignoredConsoleErrors": [
+              "Failed to load resource: the server responded with a status of 404 (Not Found)"
+            ],
+            "pageErrors": [],
+            "audio": {
+              "isPlaying": false,
+              "contextState": null,
+              "currentTime": null,
+              "maxLevel": 0,
+              "valid": true
+            }
+          },
+          "integrity": {
+            "blackoutCount": 0,
+            "invalidStateCount": 0,
+            "rendererValid": true
+          },
+          "diagnostics": {
+            "topRafGaps": [
+              {
+                "atMs": 2485.6000000000004,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 5135.6,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 7785.6,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 10252.2,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 12485.6,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 13085.6,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 16085.5,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 16452.2,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 19935.5,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 20702.2,
+                "deltaMs": 18.700000000000728
+              }
+            ],
+            "longTasks": [],
+            "longAnimationFrames": [],
+            "heapDeltaBytes": 3089291
+          },
+          "artifacts": {
+            "screenshot": "output/perf/runs/20260719T133009.338997Z/audio-off-repeat-1.png",
+            "trace": "output/perf/runs/20260719T133009.338997Z/audio-off-repeat-1.ndjson"
+          },
+          "quality": {
+            "status": "pass",
+            "reasons": [],
+            "fatalReasons": [],
+            "warningReasons": [],
+            "repairEligible": false,
+            "goals": {
+              "minimumDurationRatio": 0.85,
+              "minimumFrames": 60,
+              "p95FrameIntervalMs": 40.0,
+              "p99FrameIntervalMs": 60.0,
+              "maxAtlasFrameStep": 1.25,
+              "maxTrackingErrorP95": 0.25,
+              "maxTrackingError": 0.65,
+              "maxSettleLatencyP95Ms": 1400.0,
+              "maxSettleLatencyMs": 1800.0,
+              "maxLongTasks": 0
+            }
+          }
+        },
+        {
+          "environment": {
+            "browser": "chrome",
+            "browserVersion": "150.0.7871.125",
+            "browserMajor": "150",
+            "viewport": "720x1280",
+            "deviceScaleFactor": 1,
+            "headless": true,
+            "audio": "off",
+            "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+            "webglVendor": "Google Inc. (Apple)",
+            "webglRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+            "observedRefreshRateHz": 60
+          },
+          "metadata": {
+            "readyAtMs": 821.5,
+            "visibilityState": "visible",
+            "hasFocus": true,
+            "textureSourceCount": 39,
+            "textureRgbaBytes": 326082368,
+            "pixiResolution": 1,
+            "rendererWidth": 430,
+            "rendererHeight": 764,
+            "webglVendor": "Google Inc. (Apple)",
+            "webglRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+            "maxTextureSize": 16384,
+            "bundleNames": [
+              "index-m23XuXp3.js"
+            ],
+            "textureRgbaMiB": 310.976,
+            "scriptDurationSeconds": 13,
+            "loops": 2
+          },
+          "summary": {
+            "frameCount": 1575,
+            "durationMs": 26233.0,
+            "frameIntervals": {
+              "count": 1574,
+              "meanMs": 16.667,
+              "p50Ms": 16.7,
+              "p95Ms": 18.6,
+              "p99Ms": 18.6,
+              "maxMs": 18.7,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.001
+            },
+            "bodyMotion": {
+              "sampleCount": 1575,
+              "maxFrameStep": 1.001,
+              "p95FrameStep": 0.806,
+              "skipCount": 1,
+              "trackingError": {
+                "unit": "turn",
+                "sampleCount": 1575,
+                "p95": 0.161,
+                "max": 0.402
+              },
+              "settleLatency": {
+                "unit": "ms",
+                "sampleCount": 12,
+                "p95Ms": 822.785,
+                "maxMs": 832.3,
+                "incompleteCount": 0
+              }
+            },
+            "headMotion": {
+              "sampleCount": 1575,
+              "maxFrameStep": 0.0,
+              "p95FrameStep": 0.0,
+              "skipCount": 0,
+              "trackingError": {
+                "unit": "turn",
+                "sampleCount": 1575,
+                "p95": 0.087,
+                "max": 0.23
+              },
+              "settleLatency": {
+                "unit": "ms",
+                "sampleCount": 14,
+                "p95Ms": 650.525,
+                "maxMs": 651.5,
+                "incompleteCount": 0
+              }
+            },
+            "longTasks": {
+              "count": 0,
+              "totalMs": 0,
+              "maxMs": 0.0
+            },
+            "cueTransitions": 8,
+            "blink": {
+              "sampleCount": 404,
+              "max": 0.997
+            },
+            "tickerIntervals": {
+              "count": 1574,
+              "meanMs": 16.666,
+              "p50Ms": 16.7,
+              "p95Ms": 18.6,
+              "p99Ms": 18.8,
+              "maxMs": 26.2,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.001
+            },
+            "tickCpu": {
+              "count": 1532,
+              "meanMs": 0.196,
+              "p50Ms": 0.2,
+              "p95Ms": 0.4,
+              "p99Ms": 0.5,
+              "maxMs": 0.7,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 5113.485
+            },
+            "tickerDelta": {
+              "count": 1575,
+              "meanMs": 16.667,
+              "p50Ms": 16.7,
+              "p95Ms": 18.6,
+              "p99Ms": 18.6,
+              "maxMs": 18.7,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.0
+            },
+            "longAnimationFrames": {
+              "count": 0,
+              "totalBlockingMs": 0
+            },
+            "coldFrameIntervals": {
+              "count": 779,
+              "meanMs": 16.666,
+              "p50Ms": 16.7,
+              "p95Ms": 18.6,
+              "p99Ms": 18.6,
+              "maxMs": 18.7,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.001
+            },
+            "warmFrameIntervals": {
+              "count": 795,
+              "meanMs": 16.667,
+              "p50Ms": 16.7,
+              "p95Ms": 18.53,
+              "p99Ms": 18.6,
+              "maxMs": 18.7,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.0
+            }
+          },
+          "runtime": {
+            "consoleErrors": [],
+            "ignoredConsoleErrors": [],
+            "pageErrors": [],
+            "audio": {
+              "isPlaying": false,
+              "contextState": null,
+              "currentTime": null,
+              "maxLevel": 0,
+              "valid": true
+            }
+          },
+          "integrity": {
+            "blackoutCount": 0,
+            "invalidStateCount": 0,
+            "rendererValid": true
+          },
+          "diagnostics": {
+            "topRafGaps": [
+              {
+                "atMs": 7556.100000023842,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 23222.600000023842,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 26072.600000023842,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 3989.5000000238415,
+                "deltaMs": 18.699999999999818
+              },
+              {
+                "atMs": 4339.400000023842,
+                "deltaMs": 18.699999999999818
+              },
+              {
+                "atMs": 4989.400000023842,
+                "deltaMs": 18.699999999999818
+              },
+              {
+                "atMs": 14872.70000002384,
+                "deltaMs": 18.69999999999709
+              },
+              {
+                "atMs": 14922.70000002384,
+                "deltaMs": 18.69999999999709
+              },
+              {
+                "atMs": 18472.70000002384,
+                "deltaMs": 18.69999999999709
+              },
+              {
+                "atMs": 18772.70000002384,
+                "deltaMs": 18.69999999999709
+              }
+            ],
+            "longTasks": [],
+            "longAnimationFrames": [],
+            "heapDeltaBytes": 840493
+          },
+          "artifacts": {
+            "screenshot": "output/perf/runs/20260719T133009.338997Z/audio-off-repeat-2.png",
+            "trace": "output/perf/runs/20260719T133009.338997Z/audio-off-repeat-2.ndjson"
+          },
+          "quality": {
+            "status": "pass",
+            "reasons": [],
+            "fatalReasons": [],
+            "warningReasons": [],
+            "repairEligible": false,
+            "goals": {
+              "minimumDurationRatio": 0.85,
+              "minimumFrames": 60,
+              "p95FrameIntervalMs": 40.0,
+              "p99FrameIntervalMs": 60.0,
+              "maxAtlasFrameStep": 1.25,
+              "maxTrackingErrorP95": 0.25,
+              "maxTrackingError": 0.65,
+              "maxSettleLatencyP95Ms": 1400.0,
+              "maxSettleLatencyMs": 1800.0,
+              "maxLongTasks": 0
+            }
+          }
+        },
+        {
+          "environment": {
+            "browser": "chrome",
+            "browserVersion": "150.0.7871.125",
+            "browserMajor": "150",
+            "viewport": "720x1280",
+            "deviceScaleFactor": 1,
+            "headless": true,
+            "audio": "off",
+            "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+            "webglVendor": "Google Inc. (Apple)",
+            "webglRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+            "observedRefreshRateHz": 60
+          },
+          "metadata": {
+            "readyAtMs": 804.5,
+            "visibilityState": "visible",
+            "hasFocus": true,
+            "textureSourceCount": 39,
+            "textureRgbaBytes": 326082368,
+            "pixiResolution": 1,
+            "rendererWidth": 430,
+            "rendererHeight": 764,
+            "webglVendor": "Google Inc. (Apple)",
+            "webglRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+            "maxTextureSize": 16384,
+            "bundleNames": [
+              "index-m23XuXp3.js"
+            ],
+            "textureRgbaMiB": 310.976,
+            "scriptDurationSeconds": 13,
+            "loops": 2
+          },
+          "summary": {
+            "frameCount": 1576,
+            "durationMs": 26247.7,
+            "frameIntervals": {
+              "count": 1575,
+              "meanMs": 16.666,
+              "p50Ms": 16.7,
+              "p95Ms": 18.5,
+              "p99Ms": 18.6,
+              "maxMs": 18.7,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.004
+            },
+            "bodyMotion": {
+              "sampleCount": 1576,
+              "maxFrameStep": 1.074,
+              "p95FrameStep": 0.84,
+              "skipCount": 2,
+              "trackingError": {
+                "unit": "turn",
+                "sampleCount": 1576,
+                "p95": 0.162,
+                "max": 0.402
+              },
+              "settleLatency": {
+                "unit": "ms",
+                "sampleCount": 16,
+                "p95Ms": 818.7,
+                "maxMs": 818.7,
+                "incompleteCount": 0
+              }
+            },
+            "headMotion": {
+              "sampleCount": 1576,
+              "maxFrameStep": 0.0,
+              "p95FrameStep": 0.0,
+              "skipCount": 0,
+              "trackingError": {
+                "unit": "turn",
+                "sampleCount": 1576,
+                "p95": 0.087,
+                "max": 0.23
+              },
+              "settleLatency": {
+                "unit": "ms",
+                "sampleCount": 16,
+                "p95Ms": 651.25,
+                "maxMs": 652.0,
+                "incompleteCount": 0
+              }
+            },
+            "longTasks": {
+              "count": 0,
+              "totalMs": 0,
+              "maxMs": 0.0
+            },
+            "cueTransitions": 8,
+            "blink": {
+              "sampleCount": 404,
+              "max": 0.996
+            },
+            "tickerIntervals": {
+              "count": 1575,
+              "meanMs": 16.665,
+              "p50Ms": 16.7,
+              "p95Ms": 18.5,
+              "p99Ms": 18.7,
+              "maxMs": 18.9,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.005
+            },
+            "tickCpu": {
+              "count": 1540,
+              "meanMs": 0.196,
+              "p50Ms": 0.2,
+              "p95Ms": 0.4,
+              "p99Ms": 0.4,
+              "maxMs": 0.9,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 5101.027
+            },
+            "tickerDelta": {
+              "count": 1576,
+              "meanMs": 16.666,
+              "p50Ms": 16.7,
+              "p95Ms": 18.5,
+              "p99Ms": 18.6,
+              "maxMs": 18.7,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.004
+            },
+            "longAnimationFrames": {
+              "count": 0,
+              "totalBlockingMs": 0
+            },
+            "coldFrameIntervals": {
+              "count": 779,
+              "meanMs": 16.666,
+              "p50Ms": 16.7,
+              "p95Ms": 18.5,
+              "p99Ms": 18.6,
+              "maxMs": 18.7,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.001
+            },
+            "warmFrameIntervals": {
+              "count": 796,
+              "meanMs": 16.665,
+              "p50Ms": 16.7,
+              "p95Ms": 18.5,
+              "p99Ms": 18.6,
+              "maxMs": 18.7,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.007
+            }
+          },
+          "runtime": {
+            "consoleErrors": [],
+            "ignoredConsoleErrors": [],
+            "pageErrors": [],
+            "audio": {
+              "isPlaying": false,
+              "contextState": null,
+              "currentTime": null,
+              "maxLevel": 0,
+              "valid": true
+            }
+          },
+          "integrity": {
+            "blackoutCount": 0,
+            "invalidStateCount": 0,
+            "rendererValid": true
+          },
+          "diagnostics": {
+            "topRafGaps": [
+              {
+                "atMs": 10352.900000011921,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 12002.900000011921,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 25052.80000001192,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 2853.0000000119207,
+                "deltaMs": 18.699999999999818
+              },
+              {
+                "atMs": 4069.600000011921,
+                "deltaMs": 18.699999999999818
+              },
+              {
+                "atMs": 4836.300000011921,
+                "deltaMs": 18.699999999999818
+              },
+              {
+                "atMs": 4986.300000011921,
+                "deltaMs": 18.699999999999818
+              },
+              {
+                "atMs": 13486.20000001192,
+                "deltaMs": 18.69999999999891
+              },
+              {
+                "atMs": 15352.90000001192,
+                "deltaMs": 18.69999999999709
+              },
+              {
+                "atMs": 15136.200000011922,
+                "deltaMs": 18.600000000002183
+              }
+            ],
+            "longTasks": [],
+            "longAnimationFrames": [],
+            "heapDeltaBytes": 1489457
+          },
+          "artifacts": {
+            "screenshot": "output/perf/runs/20260719T133009.338997Z/audio-off-repeat-3.png",
+            "trace": "output/perf/runs/20260719T133009.338997Z/audio-off-repeat-3.ndjson"
+          },
+          "quality": {
+            "status": "pass",
+            "reasons": [],
+            "fatalReasons": [],
+            "warningReasons": [],
+            "repairEligible": false,
+            "goals": {
+              "minimumDurationRatio": 0.85,
+              "minimumFrames": 60,
+              "p95FrameIntervalMs": 40.0,
+              "p99FrameIntervalMs": 60.0,
+              "maxAtlasFrameStep": 1.25,
+              "maxTrackingErrorP95": 0.25,
+              "maxTrackingError": 0.65,
+              "maxSettleLatencyP95Ms": 1400.0,
+              "maxSettleLatencyMs": 1800.0,
+              "maxLongTasks": 0
+            }
+          }
+        }
+      ]
+    },
+    "whisper-audio-on": {
+      "status": "baseline",
+      "repairEligible": false,
+      "aggregate": {
+        "environment": {
+          "browser": "chrome",
+          "browserVersion": "150.0.7871.125",
+          "browserMajor": "150",
+          "viewport": "720x1280",
+          "deviceScaleFactor": 1,
+          "headless": true,
+          "audio": "on",
+          "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+          "webglVendor": "Google Inc. (Apple)",
+          "webglRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+          "observedRefreshRateHz": 60
+        },
+        "repeatCount": 3,
+        "summary": {
+          "frameCount": 1575.0,
+          "durationMs": 26233.0,
+          "frameIntervals": {
+            "meanMs": 16.667,
+            "p50Ms": 16.7,
+            "p95Ms": 18.5,
+            "p99Ms": 18.6,
+            "maxMs": 18.8,
+            "over33MsCount": 0.0,
+            "over50MsCount": 0.0,
+            "effectiveFps": 60.001
+          },
+          "bodyMotion": {
+            "maxFrameStep": 1.073,
+            "p95FrameStep": 0.828,
+            "skipCount": 1.0,
+            "trackingError": {
+              "sampleCount": 1575.0,
+              "p95": 0.158,
+              "max": 0.407,
+              "unit": "turn"
+            },
+            "settleLatency": {
+              "sampleCount": 10.0,
+              "p95Ms": 816.805,
+              "maxMs": 817.3,
+              "incompleteCount": 0.0,
+              "unit": "ms"
+            }
+          },
+          "headMotion": {
+            "maxFrameStep": 0.0,
+            "p95FrameStep": 0.0,
+            "skipCount": 0.0,
+            "trackingError": {
+              "sampleCount": 1575.0,
+              "p95": 0.088,
+              "max": 0.23,
+              "unit": "turn"
+            },
+            "settleLatency": {
+              "sampleCount": 10.0,
+              "p95Ms": 666.52,
+              "maxMs": 666.7,
+              "incompleteCount": 0.0,
+              "unit": "ms"
+            }
+          },
+          "longTasks": {
+            "count": 0.0,
+            "totalMs": 0.0,
+            "maxMs": 0.0
+          },
+          "cueTransitions": 8.0,
+          "blink": {
+            "sampleCount": 406.0,
+            "max": 0.996
+          }
+        },
+        "variability": {
+          "frameCount": {
+            "median": 1575.0,
+            "mad": 0.0,
+            "min": 1575.0,
+            "max": 1575.0
+          },
+          "durationMs": {
+            "median": 26233.0,
+            "mad": 0.2,
+            "min": 26232.8,
+            "max": 26249.4
+          },
+          "frameIntervals.meanMs": {
+            "median": 16.667,
+            "mad": 0.0,
+            "min": 16.667,
+            "max": 16.677
+          },
+          "frameIntervals.p50Ms": {
+            "median": 16.7,
+            "mad": 0.0,
+            "min": 16.7,
+            "max": 16.7
+          },
+          "frameIntervals.p95Ms": {
+            "median": 18.5,
+            "mad": 0.1,
+            "min": 18.2,
+            "max": 18.6
+          },
+          "frameIntervals.p99Ms": {
+            "median": 18.6,
+            "mad": 0.0,
+            "min": 18.6,
+            "max": 18.6
+          },
+          "frameIntervals.maxMs": {
+            "median": 18.8,
+            "mad": 0.1,
+            "min": 18.7,
+            "max": 33.3
+          },
+          "frameIntervals.over33MsCount": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "frameIntervals.over50MsCount": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "frameIntervals.effectiveFps": {
+            "median": 60.001,
+            "mad": 0.0,
+            "min": 59.962,
+            "max": 60.001
+          },
+          "bodyMotion.maxFrameStep": {
+            "median": 1.073,
+            "mad": 0.015,
+            "min": 0.996,
+            "max": 1.088
+          },
+          "bodyMotion.p95FrameStep": {
+            "median": 0.828,
+            "mad": 0.001,
+            "min": 0.797,
+            "max": 0.829
+          },
+          "bodyMotion.skipCount": {
+            "median": 1.0,
+            "mad": 1.0,
+            "min": 0.0,
+            "max": 3.0
+          },
+          "bodyMotion.trackingError.sampleCount": {
+            "median": 1575.0,
+            "mad": 0.0,
+            "min": 1575.0,
+            "max": 1575.0
+          },
+          "bodyMotion.trackingError.p95": {
+            "median": 0.158,
+            "mad": 0.003,
+            "min": 0.155,
+            "max": 0.161
+          },
+          "bodyMotion.trackingError.max": {
+            "median": 0.407,
+            "mad": 0.004,
+            "min": 0.403,
+            "max": 0.416
+          },
+          "bodyMotion.settleLatency.sampleCount": {
+            "median": 10.0,
+            "mad": 0.0,
+            "min": 10.0,
+            "max": 14.0
+          },
+          "bodyMotion.settleLatency.p95Ms": {
+            "median": 816.805,
+            "mad": 0.555,
+            "min": 816.25,
+            "max": 825.685
+          },
+          "bodyMotion.settleLatency.maxMs": {
+            "median": 817.3,
+            "mad": 0.4,
+            "min": 816.9,
+            "max": 833.2
+          },
+          "bodyMotion.settleLatency.incompleteCount": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "headMotion.maxFrameStep": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.759
+          },
+          "headMotion.p95FrameStep": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.759
+          },
+          "headMotion.skipCount": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "headMotion.trackingError.sampleCount": {
+            "median": 1575.0,
+            "mad": 0.0,
+            "min": 1575.0,
+            "max": 1575.0
+          },
+          "headMotion.trackingError.p95": {
+            "median": 0.088,
+            "mad": 0.002,
+            "min": 0.085,
+            "max": 0.09
+          },
+          "headMotion.trackingError.max": {
+            "median": 0.23,
+            "mad": 0.0,
+            "min": 0.23,
+            "max": 0.233
+          },
+          "headMotion.settleLatency.sampleCount": {
+            "median": 10.0,
+            "mad": 0.0,
+            "min": 10.0,
+            "max": 16.0
+          },
+          "headMotion.settleLatency.p95Ms": {
+            "median": 666.52,
+            "mad": 0.44,
+            "min": 650.425,
+            "max": 666.96
+          },
+          "headMotion.settleLatency.maxMs": {
+            "median": 666.7,
+            "mad": 0.8,
+            "min": 650.8,
+            "max": 667.5
+          },
+          "headMotion.settleLatency.incompleteCount": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "longTasks.count": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "longTasks.totalMs": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "longTasks.maxMs": {
+            "median": 0.0,
+            "mad": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "cueTransitions": {
+            "median": 8.0,
+            "mad": 0.0,
+            "min": 8.0,
+            "max": 8.0
+          },
+          "blink.sampleCount": {
+            "median": 406.0,
+            "mad": 0.0,
+            "min": 404.0,
+            "max": 406.0
+          },
+          "blink.max": {
+            "median": 0.996,
+            "mad": 0.0,
+            "min": 0.994,
+            "max": 0.996
+          }
+        },
+        "runtime": {
+          "consoleErrors": [],
+          "pageErrors": []
+        },
+        "integrity": {
+          "blackoutCount": 0
+        }
+      },
+      "qualityGoals": {
+        "status": "pass",
+        "reasons": [],
+        "fatalReasons": [],
+        "warningReasons": [],
+        "repairEligible": false,
+        "goals": {
+          "minimumDurationRatio": 0.85,
+          "minimumFrames": 60,
+          "p95FrameIntervalMs": 40.0,
+          "p99FrameIntervalMs": 60.0,
+          "maxAtlasFrameStep": 1.25,
+          "maxTrackingErrorP95": 0.25,
+          "maxTrackingError": 0.65,
+          "maxSettleLatencyP95Ms": 1400.0,
+          "maxSettleLatencyMs": 1800.0,
+          "maxLongTasks": 0
+        }
+      },
+      "comparison": null,
+      "repeats": [
+        {
+          "environment": {
+            "browser": "chrome",
+            "browserVersion": "150.0.7871.125",
+            "browserMajor": "150",
+            "viewport": "720x1280",
+            "deviceScaleFactor": 1,
+            "headless": true,
+            "audio": "on",
+            "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+            "webglVendor": "Google Inc. (Apple)",
+            "webglRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+            "observedRefreshRateHz": 60
+          },
+          "metadata": {
+            "readyAtMs": 810.6000000238419,
+            "visibilityState": "visible",
+            "hasFocus": true,
+            "textureSourceCount": 39,
+            "textureRgbaBytes": 326082368,
+            "pixiResolution": 1,
+            "rendererWidth": 430,
+            "rendererHeight": 764,
+            "webglVendor": "Google Inc. (Apple)",
+            "webglRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+            "maxTextureSize": 16384,
+            "bundleNames": [
+              "index-m23XuXp3.js"
+            ],
+            "textureRgbaMiB": 310.976,
+            "scriptDurationSeconds": 13,
+            "loops": 2
+          },
+          "summary": {
+            "frameCount": 1575,
+            "durationMs": 26249.4,
+            "frameIntervals": {
+              "count": 1574,
+              "meanMs": 16.677,
+              "p50Ms": 16.7,
+              "p95Ms": 18.6,
+              "p99Ms": 18.6,
+              "maxMs": 33.3,
+              "over33MsCount": 1,
+              "over50MsCount": 0,
+              "effectiveFps": 59.962
+            },
+            "bodyMotion": {
+              "sampleCount": 1575,
+              "maxFrameStep": 1.073,
+              "p95FrameStep": 0.828,
+              "skipCount": 3,
+              "trackingError": {
+                "unit": "turn",
+                "sampleCount": 1575,
+                "p95": 0.161,
+                "max": 0.416
+              },
+              "settleLatency": {
+                "unit": "ms",
+                "sampleCount": 14,
+                "p95Ms": 816.25,
+                "maxMs": 816.9,
+                "incompleteCount": 0
+              }
+            },
+            "headMotion": {
+              "sampleCount": 1575,
+              "maxFrameStep": 0.0,
+              "p95FrameStep": 0.0,
+              "skipCount": 0,
+              "trackingError": {
+                "unit": "turn",
+                "sampleCount": 1575,
+                "p95": 0.085,
+                "max": 0.233
+              },
+              "settleLatency": {
+                "unit": "ms",
+                "sampleCount": 16,
+                "p95Ms": 650.425,
+                "maxMs": 650.8,
+                "incompleteCount": 0
+              }
+            },
+            "longTasks": {
+              "count": 0,
+              "totalMs": 0,
+              "maxMs": 0.0
+            },
+            "cueTransitions": 8,
+            "blink": {
+              "sampleCount": 404,
+              "max": 0.994
+            },
+            "tickerIntervals": {
+              "count": 1574,
+              "meanMs": 16.677,
+              "p50Ms": 16.6,
+              "p95Ms": 18.6,
+              "p99Ms": 18.8,
+              "maxMs": 33.9,
+              "over33MsCount": 1,
+              "over50MsCount": 0,
+              "effectiveFps": 59.963
+            },
+            "tickCpu": {
+              "count": 1537,
+              "meanMs": 0.197,
+              "p50Ms": 0.2,
+              "p95Ms": 0.4,
+              "p99Ms": 0.4,
+              "maxMs": 0.8,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 5077.635
+            },
+            "tickerDelta": {
+              "count": 1575,
+              "meanMs": 16.677,
+              "p50Ms": 16.7,
+              "p95Ms": 18.6,
+              "p99Ms": 18.6,
+              "maxMs": 33.3,
+              "over33MsCount": 1,
+              "over50MsCount": 0,
+              "effectiveFps": 59.962
+            },
+            "longAnimationFrames": {
+              "count": 0,
+              "totalBlockingMs": 0
+            },
+            "coldFrameIntervals": {
+              "count": 778,
+              "meanMs": 16.688,
+              "p50Ms": 16.7,
+              "p95Ms": 18.6,
+              "p99Ms": 18.7,
+              "maxMs": 33.3,
+              "over33MsCount": 1,
+              "over50MsCount": 0,
+              "effectiveFps": 59.924
+            },
+            "warmFrameIntervals": {
+              "count": 796,
+              "meanMs": 16.667,
+              "p50Ms": 16.7,
+              "p95Ms": 18.6,
+              "p99Ms": 18.6,
+              "maxMs": 18.7,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.0
+            }
+          },
+          "runtime": {
+            "consoleErrors": [],
+            "ignoredConsoleErrors": [
+              "Failed to load resource: the server responded with a status of 404 (Not Found)"
+            ],
+            "pageErrors": [],
+            "audio": {
+              "isPlaying": true,
+              "contextState": "running",
+              "currentTime": 5.738667,
+              "maxLevel": 0.64693581310786,
+              "valid": true
+            }
+          },
+          "integrity": {
+            "blackoutCount": 0,
+            "invalidStateCount": 0,
+            "rendererValid": true
+          },
+          "diagnostics": {
+            "topRafGaps": [
+              {
+                "atMs": 3137.6999999761583,
+                "deltaMs": 33.30000000000018
+              },
+              {
+                "atMs": 6770.9999999761585,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 7170.9999999761585,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 17837.59999997616,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 17904.29999997616,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 21437.59999997616,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 24904.199999976157,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 937.7999999761582,
+                "deltaMs": 18.700000000000273
+              },
+              {
+                "atMs": 1437.6999999761583,
+                "deltaMs": 18.700000000000273
+              },
+              {
+                "atMs": 1771.099999976158,
+                "deltaMs": 18.699999999999818
+              }
+            ],
+            "longTasks": [],
+            "longAnimationFrames": [],
+            "heapDeltaBytes": 1044738
+          },
+          "artifacts": {
+            "screenshot": "output/perf/runs/20260719T133009.338997Z/audio-on-repeat-1.png",
+            "trace": "output/perf/runs/20260719T133009.338997Z/audio-on-repeat-1.ndjson"
+          },
+          "quality": {
+            "status": "pass",
+            "reasons": [],
+            "fatalReasons": [],
+            "warningReasons": [],
+            "repairEligible": false,
+            "goals": {
+              "minimumDurationRatio": 0.85,
+              "minimumFrames": 60,
+              "p95FrameIntervalMs": 40.0,
+              "p99FrameIntervalMs": 60.0,
+              "maxAtlasFrameStep": 1.25,
+              "maxTrackingErrorP95": 0.25,
+              "maxTrackingError": 0.65,
+              "maxSettleLatencyP95Ms": 1400.0,
+              "maxSettleLatencyMs": 1800.0,
+              "maxLongTasks": 0
+            }
+          }
+        },
+        {
+          "environment": {
+            "browser": "chrome",
+            "browserVersion": "150.0.7871.125",
+            "browserMajor": "150",
+            "viewport": "720x1280",
+            "deviceScaleFactor": 1,
+            "headless": true,
+            "audio": "on",
+            "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+            "webglVendor": "Google Inc. (Apple)",
+            "webglRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+            "observedRefreshRateHz": 60
+          },
+          "metadata": {
+            "readyAtMs": 828.8999999761581,
+            "visibilityState": "visible",
+            "hasFocus": true,
+            "textureSourceCount": 39,
+            "textureRgbaBytes": 326082368,
+            "pixiResolution": 1,
+            "rendererWidth": 430,
+            "rendererHeight": 764,
+            "webglVendor": "Google Inc. (Apple)",
+            "webglRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+            "maxTextureSize": 16384,
+            "bundleNames": [
+              "index-m23XuXp3.js"
+            ],
+            "textureRgbaMiB": 310.976,
+            "scriptDurationSeconds": 13,
+            "loops": 2
+          },
+          "summary": {
+            "frameCount": 1575,
+            "durationMs": 26233.0,
+            "frameIntervals": {
+              "count": 1574,
+              "meanMs": 16.667,
+              "p50Ms": 16.7,
+              "p95Ms": 18.5,
+              "p99Ms": 18.6,
+              "maxMs": 18.7,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.001
+            },
+            "bodyMotion": {
+              "sampleCount": 1575,
+              "maxFrameStep": 1.088,
+              "p95FrameStep": 0.797,
+              "skipCount": 1,
+              "trackingError": {
+                "unit": "turn",
+                "sampleCount": 1575,
+                "p95": 0.155,
+                "max": 0.403
+              },
+              "settleLatency": {
+                "unit": "ms",
+                "sampleCount": 10,
+                "p95Ms": 825.685,
+                "maxMs": 833.2,
+                "incompleteCount": 0
+              }
+            },
+            "headMotion": {
+              "sampleCount": 1575,
+              "maxFrameStep": 0.0,
+              "p95FrameStep": 0.0,
+              "skipCount": 0,
+              "trackingError": {
+                "unit": "turn",
+                "sampleCount": 1575,
+                "p95": 0.09,
+                "max": 0.23
+              },
+              "settleLatency": {
+                "unit": "ms",
+                "sampleCount": 10,
+                "p95Ms": 666.52,
+                "maxMs": 666.7,
+                "incompleteCount": 0
+              }
+            },
+            "longTasks": {
+              "count": 0,
+              "totalMs": 0,
+              "maxMs": 0.0
+            },
+            "cueTransitions": 8,
+            "blink": {
+              "sampleCount": 406,
+              "max": 0.996
+            },
+            "tickerIntervals": {
+              "count": 1574,
+              "meanMs": 16.666,
+              "p50Ms": 16.7,
+              "p95Ms": 18.6,
+              "p99Ms": 18.8,
+              "maxMs": 20.9,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.001
+            },
+            "tickCpu": {
+              "count": 1541,
+              "meanMs": 0.198,
+              "p50Ms": 0.2,
+              "p95Ms": 0.3,
+              "p99Ms": 0.4,
+              "maxMs": 0.6,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 5045.842
+            },
+            "tickerDelta": {
+              "count": 1575,
+              "meanMs": 16.678,
+              "p50Ms": 16.7,
+              "p95Ms": 18.5,
+              "p99Ms": 18.6,
+              "maxMs": 35.3,
+              "over33MsCount": 1,
+              "over50MsCount": 0,
+              "effectiveFps": 59.958
+            },
+            "longAnimationFrames": {
+              "count": 0,
+              "totalBlockingMs": 0
+            },
+            "coldFrameIntervals": {
+              "count": 779,
+              "meanMs": 16.665,
+              "p50Ms": 16.7,
+              "p95Ms": 18.5,
+              "p99Ms": 18.6,
+              "maxMs": 18.6,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.005
+            },
+            "warmFrameIntervals": {
+              "count": 795,
+              "meanMs": 16.668,
+              "p50Ms": 16.7,
+              "p95Ms": 18.5,
+              "p99Ms": 18.6,
+              "maxMs": 18.7,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 59.996
+            }
+          },
+          "runtime": {
+            "consoleErrors": [],
+            "ignoredConsoleErrors": [
+              "Failed to load resource: the server responded with a status of 404 (Not Found)"
+            ],
+            "pageErrors": [],
+            "audio": {
+              "isPlaying": true,
+              "contextState": "running",
+              "currentTime": 5.773402,
+              "maxLevel": 0.64693581310786,
+              "valid": true
+            }
+          },
+          "integrity": {
+            "blackoutCount": 0,
+            "invalidStateCount": 0,
+            "rendererValid": true
+          },
+          "diagnostics": {
+            "topRafGaps": [
+              {
+                "atMs": 26110.69999998808,
+                "deltaMs": 18.700000000000728
+              },
+              {
+                "atMs": 14494.09999998808,
+                "deltaMs": 18.600000000002183
+              },
+              {
+                "atMs": 16094.09999998808,
+                "deltaMs": 18.600000000002183
+              },
+              {
+                "atMs": 17694.09999998808,
+                "deltaMs": 18.600000000002183
+              },
+              {
+                "atMs": 18694.09999998808,
+                "deltaMs": 18.600000000002183
+              },
+              {
+                "atMs": 18894.09999998808,
+                "deltaMs": 18.600000000002183
+              },
+              {
+                "atMs": 18944.09999998808,
+                "deltaMs": 18.600000000002183
+              },
+              {
+                "atMs": 20244.09999998808,
+                "deltaMs": 18.600000000002183
+              },
+              {
+                "atMs": 20277.39999998808,
+                "deltaMs": 18.600000000002183
+              },
+              {
+                "atMs": 22027.39999998808,
+                "deltaMs": 18.600000000002183
+              }
+            ],
+            "longTasks": [],
+            "longAnimationFrames": [],
+            "heapDeltaBytes": 2431156
+          },
+          "artifacts": {
+            "screenshot": "output/perf/runs/20260719T133009.338997Z/audio-on-repeat-2.png",
+            "trace": "output/perf/runs/20260719T133009.338997Z/audio-on-repeat-2.ndjson"
+          },
+          "quality": {
+            "status": "pass",
+            "reasons": [],
+            "fatalReasons": [],
+            "warningReasons": [],
+            "repairEligible": false,
+            "goals": {
+              "minimumDurationRatio": 0.85,
+              "minimumFrames": 60,
+              "p95FrameIntervalMs": 40.0,
+              "p99FrameIntervalMs": 60.0,
+              "maxAtlasFrameStep": 1.25,
+              "maxTrackingErrorP95": 0.25,
+              "maxTrackingError": 0.65,
+              "maxSettleLatencyP95Ms": 1400.0,
+              "maxSettleLatencyMs": 1800.0,
+              "maxLongTasks": 0
+            }
+          }
+        },
+        {
+          "environment": {
+            "browser": "chrome",
+            "browserVersion": "150.0.7871.125",
+            "browserMajor": "150",
+            "viewport": "720x1280",
+            "deviceScaleFactor": 1,
+            "headless": true,
+            "audio": "on",
+            "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+            "webglVendor": "Google Inc. (Apple)",
+            "webglRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+            "observedRefreshRateHz": 60
+          },
+          "metadata": {
+            "readyAtMs": 815.4000000357628,
+            "visibilityState": "visible",
+            "hasFocus": true,
+            "textureSourceCount": 39,
+            "textureRgbaBytes": 326082368,
+            "pixiResolution": 1,
+            "rendererWidth": 430,
+            "rendererHeight": 764,
+            "webglVendor": "Google Inc. (Apple)",
+            "webglRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+            "maxTextureSize": 16384,
+            "bundleNames": [
+              "index-m23XuXp3.js"
+            ],
+            "textureRgbaMiB": 310.976,
+            "scriptDurationSeconds": 13,
+            "loops": 2
+          },
+          "summary": {
+            "frameCount": 1575,
+            "durationMs": 26232.8,
+            "frameIntervals": {
+              "count": 1574,
+              "meanMs": 16.667,
+              "p50Ms": 16.7,
+              "p95Ms": 18.2,
+              "p99Ms": 18.6,
+              "maxMs": 18.8,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.001
+            },
+            "bodyMotion": {
+              "sampleCount": 1575,
+              "maxFrameStep": 0.996,
+              "p95FrameStep": 0.829,
+              "skipCount": 0,
+              "trackingError": {
+                "unit": "turn",
+                "sampleCount": 1575,
+                "p95": 0.158,
+                "max": 0.407
+              },
+              "settleLatency": {
+                "unit": "ms",
+                "sampleCount": 10,
+                "p95Ms": 816.805,
+                "maxMs": 817.3,
+                "incompleteCount": 0
+              }
+            },
+            "headMotion": {
+              "sampleCount": 1575,
+              "maxFrameStep": 0.759,
+              "p95FrameStep": 0.759,
+              "skipCount": 0,
+              "trackingError": {
+                "unit": "turn",
+                "sampleCount": 1575,
+                "p95": 0.088,
+                "max": 0.23
+              },
+              "settleLatency": {
+                "unit": "ms",
+                "sampleCount": 10,
+                "p95Ms": 666.96,
+                "maxMs": 667.5,
+                "incompleteCount": 0
+              }
+            },
+            "longTasks": {
+              "count": 0,
+              "totalMs": 0,
+              "maxMs": 0.0
+            },
+            "cueTransitions": 8,
+            "blink": {
+              "sampleCount": 406,
+              "max": 0.996
+            },
+            "tickerIntervals": {
+              "count": 1574,
+              "meanMs": 16.666,
+              "p50Ms": 16.7,
+              "p95Ms": 18.3,
+              "p99Ms": 18.7,
+              "maxMs": 19.2,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.001
+            },
+            "tickCpu": {
+              "count": 1545,
+              "meanMs": 0.198,
+              "p50Ms": 0.2,
+              "p95Ms": 0.3,
+              "p99Ms": 0.4,
+              "maxMs": 0.7,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 5050.67
+            },
+            "tickerDelta": {
+              "count": 1575,
+              "meanMs": 16.667,
+              "p50Ms": 16.7,
+              "p95Ms": 18.2,
+              "p99Ms": 18.6,
+              "maxMs": 18.8,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.0
+            },
+            "longAnimationFrames": {
+              "count": 0,
+              "totalBlockingMs": 0
+            },
+            "coldFrameIntervals": {
+              "count": 779,
+              "meanMs": 16.666,
+              "p50Ms": 16.7,
+              "p95Ms": 18.2,
+              "p99Ms": 18.6,
+              "maxMs": 18.8,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.001
+            },
+            "warmFrameIntervals": {
+              "count": 795,
+              "meanMs": 16.667,
+              "p50Ms": 16.7,
+              "p95Ms": 18.23,
+              "p99Ms": 18.5,
+              "maxMs": 18.6,
+              "over33MsCount": 0,
+              "over50MsCount": 0,
+              "effectiveFps": 60.0
+            }
+          },
+          "runtime": {
+            "consoleErrors": [],
+            "ignoredConsoleErrors": [
+              "Failed to load resource: the server responded with a status of 404 (Not Found)"
+            ],
+            "pageErrors": [],
+            "audio": {
+              "isPlaying": true,
+              "contextState": "running",
+              "currentTime": 5.712,
+              "maxLevel": 0.6448637313663346,
+              "valid": true
+            }
+          },
+          "integrity": {
+            "blackoutCount": 0,
+            "invalidStateCount": 0,
+            "rendererValid": true
+          },
+          "diagnostics": {
+            "topRafGaps": [
+              {
+                "atMs": 3230.8999999999996,
+                "deltaMs": 18.799999999999272
+              },
+              {
+                "atMs": 1830.9,
+                "deltaMs": 18.700000000000273
+              },
+              {
+                "atMs": 1880.9,
+                "deltaMs": 18.700000000000273
+              },
+              {
+                "atMs": 2014.1999999999998,
+                "deltaMs": 18.699999999999818
+              },
+              {
+                "atMs": 3114.2,
+                "deltaMs": 18.699999999999818
+              },
+              {
+                "atMs": 4214.2,
+                "deltaMs": 18.699999999999818
+              },
+              {
+                "atMs": 12230.8,
+                "deltaMs": 18.69999999999891
+              },
+              {
+                "atMs": 18397.4,
+                "deltaMs": 18.600000000002183
+              },
+              {
+                "atMs": 23847.4,
+                "deltaMs": 18.600000000002183
+              },
+              {
+                "atMs": 6014.1,
+                "deltaMs": 18.600000000000364
+              }
+            ],
+            "longTasks": [],
+            "longAnimationFrames": [],
+            "heapDeltaBytes": 2146291
+          },
+          "artifacts": {
+            "screenshot": "output/perf/runs/20260719T133009.338997Z/audio-on-repeat-3.png",
+            "trace": "output/perf/runs/20260719T133009.338997Z/audio-on-repeat-3.ndjson"
+          },
+          "quality": {
+            "status": "pass",
+            "reasons": [],
+            "fatalReasons": [],
+            "warningReasons": [],
+            "repairEligible": false,
+            "goals": {
+              "minimumDurationRatio": 0.85,
+              "minimumFrames": 60,
+              "p95FrameIntervalMs": 40.0,
+              "p99FrameIntervalMs": 60.0,
+              "maxAtlasFrameStep": 1.25,
+              "maxTrackingErrorP95": 0.25,
+              "maxTrackingError": 0.65,
+              "maxSettleLatencyP95Ms": 1400.0,
+              "maxSettleLatencyMs": 1800.0,
+              "maxLongTasks": 0
+            }
+          }
+        }
+      ]
+    }
+  },
+  "overall": {
+    "status": "baseline",
+    "scenarioStatuses": {
+      "whisper-audio-off": "baseline",
+      "whisper-audio-on": "baseline"
+    },
+    "repairEligible": false,
+    "nextAction": "observe"
+  },
+  "artifacts": {
+    "metrics": "output/perf/runs/20260719T133009.338997Z/metrics.json"
+  },
+  "baselineWritten": "/Users/yuyafujita/Projects/Tsukuyomi-nemuri/output/perf/baselines/current.json"
+}
