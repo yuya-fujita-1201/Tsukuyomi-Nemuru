@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "ai-motion-monitor.v1",
+  "scenario": {
+    "id": "whisper",
+    "variant": "parameter",
+    "viewport": [720, 1280],
+    "deviceScaleFactor": 1,
+    "warmupMs": 1000,
+    "captureLoops": 2,
+    "audioModes": ["off", "on"]
+  },
+  "measurement": {
+    "browserChannel": "chrome",
+    "headless": true,
+    "baselineRepeats": 3,
+    "monitorRepeats": 1,
+    "confirmationRepeats": 2,
+    "invalidateRendererPatterns": ["SwiftShader", "llvmpipe"],
+    "goals": {
+      "minimumDurationRatio": 0.85,
+      "minimumFrames": 60,
+      "p95FrameIntervalMs": 40.0,
+      "p99FrameIntervalMs": 60.0,
+      "maxAtlasFrameStep": 1.25,
+      "maxTrackingErrorP95": 0.25,
+      "maxTrackingError": 0.65,
+      "maxSettleLatencyP95Ms": 1400.0,
+      "maxSettleLatencyMs": 1800.0,
+      "maxLongTasks": 0
+    }
+  },
+  "campaign": {
+    "intervalMinutes": 30,
+    "maxChecks": 6,
+    "maxAutomaticRepairs": 3,
+    "cleanRunsToStop": 2,
+    "warnRequiresNextCheck": true,
+    "requireHumanForVisualChange": true
+  }
+}

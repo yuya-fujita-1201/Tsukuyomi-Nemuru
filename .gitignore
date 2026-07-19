@@ -3,3 +3,7 @@ dist/
 .venv/
 .DS_Store
 *.log
+__pycache__/
+*.py[cod]
+output/perf/runs/
+output/perf/preview.log

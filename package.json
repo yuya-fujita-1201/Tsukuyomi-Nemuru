@@ -8,7 +8,11 @@
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
     "test": "node --test",
-    "test:coverage": "node --experimental-test-coverage '--test-coverage-include=src/**/*.js' --test-coverage-exclude=src/rig/puppet-engine.js --test"
+    "test:coverage": "node --experimental-test-coverage '--test-coverage-include=src/**/*.js' --test-coverage-exclude=src/rig/puppet-engine.js --test",
+    "test:motion-metrics": "python3 test/test_motion_metrics.py && python3 test/test_motion_probe_flow.py && python3 test/test_motion_monitor_runner.py",
+    "perf:motion:baseline": "python3 scripts/run_ai_motion_monitor.py --initialize-baseline",
+    "perf:motion": "python3 scripts/run_ai_motion_monitor.py",
+    "perf:motion:confirm": "python3 scripts/run_ai_motion_monitor.py --confirmation"
   },
   "dependencies": {
     "pixi.js": "^8.19.0"
