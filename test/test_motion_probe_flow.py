@@ -10,6 +10,7 @@ sys.path.insert(0, str(ROOT / "test"))
 from e2e_ai_motion_perf import (  # noqa: E402
     baseline_is_writable,
     exit_code_for_status,
+    merge_repeat_quality,
     resolve_scenario_status,
     select_campaign_history,
 )
@@ -87,6 +88,22 @@ class MotionProbeFlowTests(unittest.TestCase):
             select_campaign_history(history, "current"),
             history[1:],
         )
+
+    def test_one_intermittent_warning_remains_visible_after_repeat_aggregation(self):
+        quality = merge_repeat_quality(
+            {
+                "status": "pass",
+                "reasons": [],
+                "fatalReasons": [],
+                "warningReasons": [],
+                "repairEligible": False,
+            },
+            ["warn", "pass", "pass"],
+        )
+
+        self.assertEqual(quality["status"], "warn")
+        self.assertIn("warn-repeat", quality["reasons"])
+        self.assertTrue(quality["repairEligible"])
 
 
 if __name__ == "__main__":

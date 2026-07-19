@@ -343,6 +343,38 @@ def exit_code_for_status(status: str) -> int:
     return 2 if status in {"fail", "invalid"} else 0
 
 
+def merge_repeat_quality(
+    quality: dict[str, Any], repeat_statuses: list[str]
+) -> dict[str, Any]:
+    """Keep intermittent repeat warnings visible after median aggregation."""
+    result = {
+        **quality,
+        "reasons": list(quality.get("reasons", [])),
+        "fatalReasons": list(quality.get("fatalReasons", [])),
+        "warningReasons": list(quality.get("warningReasons", [])),
+    }
+    if "invalid" in repeat_statuses:
+        result["status"] = "invalid"
+        marker = "invalid-repeat-environment"
+        result["repairEligible"] = False
+    elif "fail" in repeat_statuses:
+        result["status"] = "fail"
+        marker = "failed-repeat"
+        result["repairEligible"] = False
+    elif "warn" in repeat_statuses:
+        if severity(result.get("status", "pass")) < severity("warn"):
+            result["status"] = "warn"
+        marker = "warn-repeat"
+        result["repairEligible"] = True
+        if marker not in result["warningReasons"]:
+            result["warningReasons"].insert(0, marker)
+    else:
+        return result
+    if marker not in result["reasons"]:
+        result["reasons"].insert(0, marker)
+    return result
+
+
 def select_campaign_history(
     history: list[dict[str, Any]], campaign_id: str
 ) -> list[dict[str, Any]]:
@@ -686,15 +718,7 @@ def main() -> int:
                     goals=policy["measurement"]["goals"],
                 )
                 repeat_statuses = [report["quality"]["status"] for report in reports]
-                if "invalid" in repeat_statuses:
-                    quality["status"] = "invalid"
-                    quality["reasons"] = [
-                        "invalid-repeat-environment",
-                        *quality["reasons"],
-                    ]
-                elif "fail" in repeat_statuses:
-                    quality["status"] = "fail"
-                    quality["reasons"] = ["failed-repeat", *quality["reasons"]]
+                quality = merge_repeat_quality(quality, repeat_statuses)
 
                 comparison = None
                 baseline_scenario = (baseline or {}).get("scenarios", {}).get(
