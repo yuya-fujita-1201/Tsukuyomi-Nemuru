@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "title": "月夜の囁き",
+  "cues": [
+    {
+      "at": 0,
+      "duration": 3,
+      "emotion": "gentle",
+      "speech": 0.42,
+      "look": [0.05, 0.05],
+      "gesture": "present",
+      "emphasis": 0.2,
+      "turn": 0,
+      "note": "こんばんは。今夜は、少しだけ静かな話をしましょう。"
+    },
+    {
+      "at": 3,
+      "duration": 4,
+      "emotion": "calm",
+      "speech": 0.68,
+      "look": [-0.18, -0.02],
+      "gesture": "none",
+      "emphasis": 0.35,
+      "turn": -0.62,
+      "note": "声の強さではなく、間と視線で言葉を届けます。"
+    },
+    {
+      "at": 7,
+      "duration": 3,
+      "emotion": "focused",
+      "speech": 0.73,
+      "look": [0.16, 0.08],
+      "gesture": "book",
+      "emphasis": 0.6,
+      "turn": 0.58,
+      "note": "大事なところだけ、そっと強調します。"
+    },
+    {
+      "at": 10,
+      "duration": 3,
+      "emotion": "sleepy",
+      "speech": 0.25,
+      "look": [0, 0.12],
+      "gesture": "settle",
+      "emphasis": 0.08,
+      "turn": 0,
+      "note": "それでは、続きはまた次の月夜に。"
+    }
+  ]
+}

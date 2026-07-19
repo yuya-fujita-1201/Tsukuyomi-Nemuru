@@ -1,0 +1,21 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "brows_neutral",
+      "file": "../parts/brows_neutral-v1-raw.png",
+      "group": "70_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 72
+    }
+  ],
+  "notes": [
+    "Built-in ImageGen neutral eyebrow pair before guide alignment."
+  ]
+}

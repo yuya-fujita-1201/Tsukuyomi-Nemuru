@@ -1,0 +1,28 @@
+{
+  "name": "body_torso",
+  "status": "accepted",
+  "source": "built-in ImageGen plus guide-bbox fit alignment",
+  "generated_at": "2026-07-17",
+  "raw_asset": "../body_torso-v1-raw.png",
+  "aligned_asset": "body_torso.png",
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "validation": {
+    "has_alpha": true,
+    "transparent_corners": true,
+    "alpha_bbox_threshold_32": [270, 524, 816, 1384],
+    "subject_center": [543.0, 954.0],
+    "manifest_errors": 0,
+    "manifest_warnings": 0,
+    "contains_only_target_part": true,
+    "has_hidden_underpaint": true
+  },
+  "decision": "use_in_poc_and_layer_manifest",
+  "known_issues": [
+    "the neck begins lower than the canonical master",
+    "face_base must overlap the neck and clavicle area",
+    "the lower hem ends above the canvas edge but remains outside the intended bust-up crop"
+  ]
+}

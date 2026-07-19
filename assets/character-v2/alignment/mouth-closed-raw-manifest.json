@@ -1,0 +1,21 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "mouth_closed",
+      "file": "../parts/mouth_closed-v1-raw.png",
+      "group": "80_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 80
+    }
+  ],
+  "notes": [
+    "Built-in ImageGen closed neutral mouth before guide alignment."
+  ]
+}

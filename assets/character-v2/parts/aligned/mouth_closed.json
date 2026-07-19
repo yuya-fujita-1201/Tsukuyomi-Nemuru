@@ -1,0 +1,24 @@
+{
+  "name": "mouth_closed",
+  "status": "accepted",
+  "source": "built-in ImageGen plus guide-bbox fit alignment",
+  "generated_at": "2026-07-17",
+  "raw_asset": "../mouth_closed-v1-raw.png",
+  "aligned_asset": "mouth_closed.png",
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "validation": {
+    "has_alpha": true,
+    "transparent_corners": true,
+    "alpha_bbox_threshold_32": [505, 523, 581, 537],
+    "contains_open_interior": false,
+    "rest_expression_is_natural": true
+  },
+  "motion_contract": {
+    "rms_range": [0.0, 0.12],
+    "viseme": "rest"
+  },
+  "decision": "use_as_closed_rest_mouth"
+}

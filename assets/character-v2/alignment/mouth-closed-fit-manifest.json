@@ -1,0 +1,22 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "mouth_closed",
+      "file": "../parts/candidates/mouth-closed-fit/mouth_closed.png",
+      "group": "80_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 80
+    }
+  ],
+  "notes": [
+    "Built-in ImageGen closed neutral mouth before guide alignment.",
+    "Aligned 1 regenerated parts to guide bounding boxes with mode=fit, alpha_threshold=32."
+  ]
+}

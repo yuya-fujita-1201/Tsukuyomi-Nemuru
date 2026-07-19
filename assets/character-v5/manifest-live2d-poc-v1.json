@@ -1,0 +1,98 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "front_faceless_base",
+      "file": "master/front-faceless-v1.png",
+      "group": "10_base",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 10
+    },
+    {
+      "name": "eye_base_open",
+      "file": "parts/aligned-v1/eye_base_open.png",
+      "group": "20_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 20
+    },
+    {
+      "name": "irises",
+      "file": "parts/aligned-v1/irises.png",
+      "group": "20_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 21
+    },
+    {
+      "name": "eyes_closed",
+      "file": "parts/aligned-v1/eyes_closed.png",
+      "group": "20_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 22
+    },
+    {
+      "name": "brows_neutral",
+      "file": "parts/aligned-v1/brows_neutral.png",
+      "group": "25_brows",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 25
+    },
+    {
+      "name": "mouth_closed",
+      "file": "parts/aligned-v1/mouth_closed.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 30
+    },
+    {
+      "name": "mouth_open_small",
+      "file": "parts/aligned-v1/mouth_open_small.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 31
+    },
+    {
+      "name": "mouth_open_wide",
+      "file": "parts/aligned-v1/mouth_open_wide.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 32
+    }
+  ],
+  "notes": [
+    "models/ refreshed samples are the character identity source of truth.",
+    "23_03_43 (1) is the front registration reference; 3/4 samples provide side poses.",
+    "Open eyes use calm adult 110x61 almond proportions, with 200px center spacing and thin dark-violet linework.",
+    "The open-eye irises are intentionally asymmetric: screen-left/character-right is dark, while screen-right/character-left has the pale moon ring.",
+    "The revised source lifts the upper lids and softens the outer corners; 61px registration adds about five percent eye height while keeping a calm direct gaze.",
+    "Mouth states retain the approved source art; the speaking states are 7-9 percent less open for quiet narration.",
+    "Complete eyes are one layer; irises is a one-pixel compatibility placeholder and gaze translation is visually inactive in v5.",
+    "This PSD is layered animation material and has not been rigged or imported in Live2D Cubism."
+  ]
+}

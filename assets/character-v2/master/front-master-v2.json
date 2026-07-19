@@ -1,0 +1,28 @@
+{
+  "status": "working_master",
+  "source": "built-in ImageGen",
+  "generated_at": "2026-07-17",
+  "chroma_source": "front-master-v2-chroma.png",
+  "transparent_asset": "front-master-v2.png",
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "validation": {
+    "has_alpha": true,
+    "transparent_corners": true,
+    "alpha_bbox": [29, 79, 1055, 1448]
+  },
+  "decision": "use_for_pose_and_part_generation",
+  "strengths": [
+    "calmer eye shape than v1",
+    "simplified costume ornament density",
+    "front-facing symmetric neutral pose",
+    "arms and hands are separated from the torso",
+    "clean chroma-key extraction"
+  ],
+  "known_issues": [
+    "hair and clothing continue beyond the bottom canvas edge",
+    "hidden under-paint must be added when regenerating separated parts"
+  ]
+}

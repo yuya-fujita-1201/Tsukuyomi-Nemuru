@@ -1,0 +1,25 @@
+{
+  "name": "brows_neutral",
+  "status": "accepted",
+  "source": "built-in ImageGen plus guide-bbox fit alignment",
+  "generated_at": "2026-07-17",
+  "raw_asset": "../brows_neutral-v1-raw.png",
+  "aligned_asset": "brows_neutral.png",
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "validation": {
+    "has_alpha": true,
+    "transparent_corners": true,
+    "alpha_bbox_threshold_32": [432, 341, 656, 350],
+    "pair_is_separated": true,
+    "contains_non_brow_pixels": false
+  },
+  "motion_contract": {
+    "max_y_pixels": 7,
+    "max_rotation_degrees": 7,
+    "split_into_left_right_at_runtime": true
+  },
+  "decision": "use_as_neutral_expression_brow_pair"
+}

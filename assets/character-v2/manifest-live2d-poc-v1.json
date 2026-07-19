@@ -1,0 +1,174 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "hair_back",
+      "file": "parts/hair_back-v1.png",
+      "group": "10_hair_back",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 10
+    },
+    {
+      "name": "arm_r_base",
+      "file": "parts/aligned/arm_r_base-v2.png",
+      "group": "20_arms",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 20
+    },
+    {
+      "name": "arm_l_base",
+      "file": "parts/aligned/arm_l_base-v3.png",
+      "group": "20_arms",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 21
+    },
+    {
+      "name": "body_torso",
+      "file": "parts/aligned/body_torso.png",
+      "group": "30_body",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 30
+    },
+    {
+      "name": "face_base",
+      "file": "parts/aligned/face_base-v2.png",
+      "group": "40_head",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 40
+    },
+    {
+      "name": "eye_base_open",
+      "file": "parts/aligned/eye_base_open.png",
+      "group": "50_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 50
+    },
+    {
+      "name": "irises",
+      "file": "parts/aligned/irises.png",
+      "group": "50_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 51
+    },
+    {
+      "name": "eyes_closed",
+      "file": "parts/aligned/eyes_closed.png",
+      "group": "50_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 52
+    },
+    {
+      "name": "brows_neutral",
+      "file": "parts/aligned/brows_neutral.png",
+      "group": "55_brows",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 55
+    },
+    {
+      "name": "mouth_closed",
+      "file": "parts/aligned/mouth_closed.png",
+      "group": "60_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 60
+    },
+    {
+      "name": "mouth_open_small",
+      "file": "parts/aligned/mouth_open_small.png",
+      "group": "60_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 61
+    },
+    {
+      "name": "mouth_open_wide",
+      "file": "parts/aligned/mouth_open_wide.png",
+      "group": "60_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 62
+    },
+    {
+      "name": "hair_front",
+      "file": "parts/aligned/hair_front.png",
+      "group": "70_hair_front",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 70
+    },
+    {
+      "name": "earring_r",
+      "file": "parts/aligned/earring_r.png",
+      "group": "80_accessories",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 80
+    },
+    {
+      "name": "earring_l",
+      "file": "parts/aligned/earring_l.png",
+      "group": "80_accessories",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 81
+    },
+    {
+      "name": "accessory_head",
+      "file": "parts/aligned/accessory_head.png",
+      "group": "80_accessories",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 82
+    }
+  ],
+  "notes": [
+    "Layered bust-up material regenerated from the character reference rather than cut from the flattened source.",
+    "Full-canvas PNG layers use canonical 1086x1448 coordinates.",
+    "eyes_closed, mouth_open_small, and mouth_open_wide are hidden expression layers for PSD/runtime switching.",
+    "The PSD is material for import and has not been rigged in Live2D Cubism."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "mouth_open_wide",
+  "status": "accepted",
+  "source": "built-in ImageGen plus guide-bbox stretch alignment",
+  "generated_at": "2026-07-17",
+  "raw_asset": "../mouth_open_wide-v1-raw.png",
+  "aligned_asset": "mouth_open_wide.png",
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "validation": {
+    "has_alpha": true,
+    "transparent_corners": true,
+    "alpha_bbox_threshold_32": [503, 500, 584, 571],
+    "contains_teeth": true,
+    "contains_tongue": true,
+    "wide_open_shape_is_distinct": true,
+    "manifest_errors": 0,
+    "manifest_warnings": 0
+  },
+  "motion_contract": {
+    "rms_range": [0.45, 1.0],
+    "viseme": "wide_open"
+  },
+  "decision": "use_as_high_energy_speech_mouth"
+}

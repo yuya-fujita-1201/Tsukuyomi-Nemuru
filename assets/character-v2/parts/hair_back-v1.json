@@ -1,0 +1,25 @@
+{
+  "name": "hair_back",
+  "status": "accepted",
+  "source": "built-in ImageGen",
+  "generated_at": "2026-07-17",
+  "chroma_source": "hair_back-v1-chroma.png",
+  "transparent_asset": "hair_back-v1.png",
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "validation": {
+    "has_alpha": true,
+    "transparent_corners": true,
+    "alpha_bbox": [119, 77, 968, 1404],
+    "subject_center": [543.5, 740.5],
+    "contains_only_target_part": true,
+    "has_hidden_underpaint": true
+  },
+  "decision": "use_in_poc_and_layer_manifest",
+  "known_issues": [
+    "the isolated rear-hair painting is smoother and more continuous than the visible hair in the canonical master",
+    "final composite continuity still depends on the regenerated front hair"
+  ]
+}

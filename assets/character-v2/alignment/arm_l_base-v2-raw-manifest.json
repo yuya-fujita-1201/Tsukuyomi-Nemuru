@@ -1,0 +1,21 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "arm_l_base",
+      "file": "../parts/arm_l_base-v2-raw.png",
+      "group": "70_arms",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 71
+    }
+  ],
+  "notes": [
+    "Corrected ImageGen character-left arm before guide alignment."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "irises",
+      "file": "../parts/irises-v1-raw.png",
+      "group": "70_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 71
+    }
+  ],
+  "notes": [
+    "Built-in ImageGen matching lavender iris pair before guide alignment."
+  ]
+}

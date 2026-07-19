@@ -1,0 +1,26 @@
+{
+  "name": "irises",
+  "status": "accepted",
+  "source": "built-in ImageGen plus guide-bbox fit alignment",
+  "generated_at": "2026-07-17",
+  "raw_asset": "../irises-v1-raw.png",
+  "aligned_asset": "irises.png",
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "validation": {
+    "has_alpha": true,
+    "transparent_corners": true,
+    "alpha_bbox_threshold_32": [455, 374, 630, 428],
+    "pair_is_separated": true,
+    "contains_sclera_or_lashes": false,
+    "fits_inside_open_eye_base_at_neutral": true
+  },
+  "motion_contract": {
+    "max_x_pixels": 6,
+    "max_y_pixels": 4,
+    "requires_sclera_mask": true
+  },
+  "decision": "use_as_shared_moving_gaze_layer"
+}

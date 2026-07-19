@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="月詠ねむりの首、体、眼球、母音口をブラウザ上のパラメータで確認できるLive2D風レビューアプリ"
+    />
+    <title>眠りの演技室 — Layered AI Puppet</title>
+  </head>
+  <body>
+    <div class="star-field" aria-hidden="true"></div>
+    <div class="moon-orbit moon-orbit-a" aria-hidden="true"></div>
+    <div class="moon-orbit moon-orbit-b" aria-hidden="true"></div>
+
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-lockup">
+          <p class="eyebrow">TSUKUYOMI NEMURI / PARAMETER STUDY 08</p>
+          <h1>眠りの演技室</h1>
+          <p class="brand-subtitle">
+            continuous neck and body keys, live side gaze and mouth — no camera performer
+          </p>
+        </div>
+        <div class="system-state">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span id="system-label">レイヤー素材を準備中</span>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <section class="preview-column" aria-labelledby="preview-heading">
+          <div class="section-heading">
+            <div>
+              <p class="section-index">01 / LIVE PREVIEW</p>
+              <h2 id="preview-heading">Layered AI Puppet</h2>
+            </div>
+            <div class="preview-tools">
+              <span class="asset-state" id="asset-state">39 RASTER ASSETS</span>
+              <div class="format-switch" aria-label="動画フォーマット">
+                <button class="format-button is-active" data-format="short">
+                  9:16 Shorts
+                </button>
+                <button class="format-button" data-format="wide">
+                  16:9 通常
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="stage-shell" id="stage-shell" data-format="short">
+            <div id="puppet-stage" class="puppet-stage">
+              <div class="stage-loading" id="stage-loading">
+                <span>CONTINUOUS NECK → CONTINUOUS BODY → LIVE SIDE FACE</span>
+              </div>
+              <div class="stage-chrome">
+                <div class="stage-tag">
+                  <span id="stage-mode">AI DIRECTOR</span>
+                  <span id="stage-fps">-- FPS</span>
+                </div>
+                <div class="stage-readout" aria-hidden="true">
+                  <span>FACE</span>
+                  <span>EYES</span>
+                  <span>MOUTH</span>
+                  <span>BODY</span>
+                  <span>ARMS</span>
+                </div>
+                <div class="subtitle-card">
+                  <p id="cue-note">演技キューを読み込んでいます。</p>
+                  <div class="timeline-track">
+                    <span id="timeline-progress"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="transport">
+            <button id="play-toggle" class="primary-action" disabled>
+              <span class="action-icon" aria-hidden="true">▶</span>
+              <span class="action-label">AI演技を開始</span>
+            </button>
+            <button id="restart-button" class="quiet-action" disabled>
+              最初から
+            </button>
+            <button id="blink-button" class="quiet-action" disabled>
+              瞬き
+            </button>
+            <label class="mesh-toggle">
+              <input id="mesh-toggle" type="checkbox" />
+              <span>パーツ範囲</span>
+            </label>
+          </div>
+        </section>
+
+        <aside class="control-deck" aria-label="AI演技コントロール">
+          <section class="deck-section director-section">
+            <div class="deck-heading">
+              <p class="section-index">02 / AI DIRECTOR</p>
+              <span class="mode-pill" id="mode-pill">AUTO</span>
+            </div>
+
+            <label class="field-label" for="scenario-select">意味キュー・シナリオ</label>
+            <div class="select-wrap">
+              <select id="scenario-select">
+                <option value="whisper">月夜の囁き</option>
+                <option value="explainer">静かな解説</option>
+                <option value="goodnight">おやすみ前</option>
+              </select>
+            </div>
+
+            <div class="now-playing">
+              <div>
+                <span class="micro-label">NOW PLAYING</span>
+                <strong id="script-title">月夜の囁き</strong>
+              </div>
+              <div class="timecode">
+                <span id="elapsed-time">00.0</span>
+                <i>/</i>
+                <span id="total-time">13.0</span>
+              </div>
+            </div>
+
+            <ol class="cue-list" id="cue-list"></ol>
+          </section>
+
+          <section class="deck-section audio-section">
+            <div class="deck-heading">
+              <p class="section-index">03 / VOICE RMS</p>
+              <span class="micro-label">OPTIONAL AUDIO</span>
+            </div>
+            <p class="helper-copy audio-copy">
+              AI音声ファイルを読み込むと、実際の音量から4段階の口素材を補間します。
+            </p>
+            <input id="audio-file" type="file" accept="audio/*" hidden />
+            <label class="audio-drop" for="audio-file">
+              <span class="audio-drop-icon" aria-hidden="true">◐</span>
+              <span>
+                <strong>AI音声を選択</strong>
+                <small id="audio-file-name">WAV / MP3 / M4A</small>
+              </span>
+            </label>
+            <div class="audio-transport">
+              <button id="audio-toggle" class="quiet-action" disabled>
+                音声を再生
+              </button>
+              <div class="audio-meter" aria-label="音声レベル">
+                <span id="audio-meter-fill"></span>
+              </div>
+              <span id="audio-status" role="status">未読込</span>
+            </div>
+          </section>
+
+          <section class="deck-section motion-section">
+            <div class="deck-heading">
+              <p class="section-index">04 / PARAMETER REVIEW</p>
+              <span class="micro-label">LIVE LINK</span>
+            </div>
+            <label class="field-label" for="turn-variant-select">向きモーション</label>
+            <div class="select-wrap">
+              <select id="turn-variant-select">
+                <option value="parameter">連続首・体キー実験室（推奨）</option>
+                <option value="natural">連続首キー（体スライダー連動）</option>
+                <option value="full">連続全身キー（既存3/4終点を保持）</option>
+                <option value="soft">旧・控えめメッシュ（比較用）</option>
+                <option value="head-only">旧・顔中心メッシュ（比較用）</option>
+              </select>
+            </div>
+            <p class="helper-copy motion-variant-note">
+              首と体は移動中だけ左右各16キーを隣接補間し、停止時は最寄りの1キーへ固定します。横向きの目は安全消去ベース＋可動虹彩＋固定アイラインに分け、上下左右へ動かしても元虹彩を残さず、まつ毛を動かしません。瞬き・小開口も追従し、髪は各キーに描かれた形ごと連動します。
+            </p>
+            <div class="parameter-status" aria-label="パラメータ連動状態">
+              <span><i></i>眼球分離 <strong id="eye-tracking-state">X 0.00 / Y 0.00</strong></span>
+              <span><i></i>髪連動 <strong id="hair-link-state">固定 / 変形なし</strong></span>
+              <span><i></i>連続キー <strong id="pose-link-state">FRONT</strong></span>
+            </div>
+            <div class="parameter-actions" aria-label="レビュープリセット">
+              <button class="parameter-preset is-active" data-review-preset="neutral">正面</button>
+              <button class="parameter-preset" data-review-preset="gaze">視線確認</button>
+              <button class="parameter-preset" data-review-preset="neck-left">首・左</button>
+              <button class="parameter-preset" data-review-preset="neck-right">首・右</button>
+              <button class="parameter-preset" data-review-preset="body-left">体・左3/4</button>
+              <button class="parameter-preset" data-review-preset="body-right">体・右3/4</button>
+              <button id="reset-parameters" class="parameter-preset">リセット</button>
+              <button id="copy-parameter-url" class="parameter-preset parameter-share">URLをコピー</button>
+            </div>
+            <p class="parameter-group-title">主要パラメータ</p>
+            <div class="slider-grid slider-grid-primary">
+              <label class="motion-control">
+                <span>首の向き</span>
+                <output data-output="headTurn">0.00</output>
+                <input data-pose="headTurn" type="range" min="-1" max="1" step="0.01" value="0" />
+              </label>
+              <label class="motion-control">
+                <span>体の向き</span>
+                <output data-output="turn">0.00</output>
+                <input data-pose="turn" type="range" min="-1" max="1" step="0.01" value="0" />
+              </label>
+              <label class="motion-control">
+                <span>視線・左右</span>
+                <output data-output="gazeX">0.00</output>
+                <input data-pose="gazeX" type="range" min="-1" max="1" step="0.01" value="0" />
+              </label>
+              <label class="motion-control">
+                <span>視線・上下</span>
+                <output data-output="gazeY">0.00</output>
+                <input data-pose="gazeY" type="range" min="-1" max="1" step="0.01" value="0" />
+              </label>
+              <label class="motion-control">
+                <span>口の開き</span>
+                <output data-output="mouthOpen">0.00</output>
+                <input data-pose="mouthOpen" type="range" min="0" max="1" step="0.01" value="0" />
+              </label>
+              <div class="vowel-control" role="group" aria-label="正面用の母音口">
+                <span>
+                  <strong>母音の形</strong>
+                  <small>正面用・中開き</small>
+                </span>
+                <div class="vowel-buttons">
+                  <button class="vowel-button is-active" data-mouth-vowel="auto" aria-pressed="true">自動</button>
+                  <button class="vowel-button" data-mouth-vowel="a" aria-pressed="false">あ</button>
+                  <button class="vowel-button" data-mouth-vowel="i" aria-pressed="false">い</button>
+                  <button class="vowel-button" data-mouth-vowel="u" aria-pressed="false">う</button>
+                  <button class="vowel-button" data-mouth-vowel="e" aria-pressed="false">え</button>
+                  <button class="vowel-button" data-mouth-vowel="o" aria-pressed="false">お</button>
+                </div>
+              </div>
+              <label class="motion-control">
+                <span>瞬き</span>
+                <output data-output="blink">0.00</output>
+                <input data-pose="blink" type="range" min="0" max="1" step="0.01" value="0" />
+              </label>
+            </div>
+            <details class="advanced-parameters">
+              <summary>詳細パラメータ</summary>
+              <div class="slider-grid slider-grid-advanced">
+              <label class="motion-control">
+                <span>顔・左右位置</span>
+                <output data-output="headX">0.00</output>
+                <input data-pose="headX" type="range" min="-1" max="1" step="0.01" value="0" />
+              </label>
+              <label class="motion-control">
+                <span>顔・上下位置</span>
+                <output data-output="headY">0.00</output>
+                <input data-pose="headY" type="range" min="-1" max="1" step="0.01" value="0" />
+              </label>
+              <label class="motion-control">
+                <span>首かしげ</span>
+                <output data-output="headTilt">0.00</output>
+                <input data-pose="headTilt" type="range" min="-1" max="1" step="0.01" value="0" />
+              </label>
+              <label class="motion-control">
+                <span>呼吸</span>
+                <output data-output="breath">0.35</output>
+                <input data-pose="breath" type="range" min="0" max="1" step="0.01" value="0.35" />
+              </label>
+              <label class="motion-control">
+                <span>肩の揺れ</span>
+                <output data-output="shoulderSway">0.00</output>
+                <input data-pose="shoulderSway" type="range" min="-1" max="1" step="0.01" value="0" />
+              </label>
+              <label class="motion-control">
+                <span>腕の強調</span>
+                <output data-output="handAccent">0.00</output>
+                <input data-pose="handAccent" type="range" min="-1" max="1" step="0.01" value="0" />
+              </label>
+              <label class="motion-control">
+                <span>本の上下</span>
+                <output data-output="bookBob">0.00</output>
+                <input data-pose="bookBob" type="range" min="-1" max="1" step="0.01" value="0" />
+              </label>
+              <label class="motion-control">
+                <span>笑顔</span>
+                <output data-output="smile">0.12</output>
+                <input data-pose="smile" type="range" min="-1" max="1" step="0.01" value="0.12" />
+              </label>
+              <label class="motion-control">
+                <span>発話強度</span>
+                <output data-output="speech">0.00</output>
+                <input data-pose="speech" type="range" min="0" max="1" step="0.01" value="0" />
+              </label>
+            </div>
+            </details>
+          </section>
+
+          <details class="deck-section json-section">
+            <summary>
+              <span>
+                <span class="section-index">05 / CUE JSON</span>
+                AI出力を直接読み込む
+              </span>
+              <span class="summary-mark" aria-hidden="true">＋</span>
+            </summary>
+            <p class="helper-copy">
+              AIは毎フレームの座標ではなく、感情・発話量・視線・向き・ジェスチャーを返します。
+            </p>
+            <textarea id="script-json" spellcheck="false"></textarea>
+            <div class="json-actions">
+              <button id="apply-json" class="quiet-action">JSONを反映</button>
+              <span id="json-status" role="status">入力待ち</span>
+            </div>
+          </details>
+        </aside>
+      </main>
+
+      <footer class="footer-note">
+        <span>POC SCOPE</span>
+        <p>
+          眼球分離、左右16キーの首向き・体向き、静止時の単一キーロック、横向きの視線・瞬き・小開口、閉じ口から微開きへの補間をWeb上で確認できます。正面は上まぶたの左右差を揃え、open / half / closedの3段階瞬きへ更新しました。横向きはclean eye-base＋tight iris＋fixed eye-lineで、視線移動後の二重表示、まつ毛欠け、虹彩下の白い隙間を抑えています。正面口は全キーを同じ量だけ顔軸へ寄せています。髪束の分離メッシュは素材再生成まで保留しています。
+        </p>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "arm_l_base",
+  "status": "accepted",
+  "side_convention": "character-left, viewer-right in the front pose",
+  "source": "built-in ImageGen v2 plus guide-bbox stretch alignment",
+  "generated_at": "2026-07-17",
+  "raw_asset": "../arm_l_base-v2-raw.png",
+  "aligned_asset": "arm_l_base-v2.png",
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "validation": {
+    "has_alpha": true,
+    "transparent_corners": true,
+    "alpha_bbox_threshold_32": [680, 570, 1061, 1396],
+    "manifest_errors": 0,
+    "manifest_warnings": 0,
+    "shoulder_is_inner": true,
+    "hand_is_outer": true,
+    "hand_is_not_cropped": true
+  },
+  "decision": "use_in_poc_and_layer_manifest",
+  "known_issues": [
+    "stretch alignment changes the raw part aspect ratio",
+    "the left sleeve is slightly wider than the fitted right sleeve"
+  ]
+}

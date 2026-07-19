@@ -1,0 +1,22 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "eye_base_open",
+      "file": "../parts/candidates/eye-base-open-stretch/eye_base_open.png",
+      "group": "70_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 70
+    }
+  ],
+  "notes": [
+    "Built-in ImageGen open sclera, eyelid, and eyelash pair before guide alignment.",
+    "Aligned 1 regenerated parts to guide bounding boxes with mode=stretch, alpha_threshold=32."
+  ]
+}

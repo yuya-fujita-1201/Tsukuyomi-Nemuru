@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.tsukuyomi-nemuri/director-schema-v1.json",
+  "title": "Tsukuyomi Nemuri AI Director Script",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "cues"],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "title": {
+      "type": "string"
+    },
+    "cues": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["at", "duration"],
+        "properties": {
+          "at": {
+            "type": "number",
+            "minimum": 0
+          },
+          "duration": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "emotion": {
+            "type": "string",
+            "enum": ["calm", "gentle", "sleepy", "focused", "surprised"],
+            "default": "calm"
+          },
+          "speech": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "default": 0
+          },
+          "look": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "number",
+                "minimum": -1,
+                "maximum": 1
+              },
+              {
+                "type": "number",
+                "minimum": -1,
+                "maximum": 1
+              }
+            ],
+            "items": false,
+            "minItems": 2,
+            "maxItems": 2,
+            "default": [0, 0]
+          },
+          "gesture": {
+            "type": "string",
+            "enum": ["none", "present", "nod", "book", "settle"],
+            "default": "none"
+          },
+          "emphasis": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "default": 0
+          },
+          "turn": {
+            "type": "number",
+            "minimum": -1,
+            "maximum": 1,
+            "default": 0,
+            "description": "正面から左右3/4ポーズへのクロスフェード。負数は画面左、正数は画面右。"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

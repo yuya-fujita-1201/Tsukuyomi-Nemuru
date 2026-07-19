@@ -1,0 +1,158 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "front_faceless_base",
+      "file": "master/front-faceless-v1.png",
+      "group": "10_base",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 10
+    },
+    {
+      "name": "eye_base_open",
+      "file": "parts/aligned-v1/eye_base_open.png",
+      "group": "20_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 20
+    },
+    {
+      "name": "irises",
+      "file": "parts/aligned-v1/irises.png",
+      "group": "20_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 21
+    },
+    {
+      "name": "eyes_closed",
+      "file": "parts/aligned-v1/eyes_closed.png",
+      "group": "20_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 22
+    },
+    {
+      "name": "brows_neutral",
+      "file": "parts/aligned-v1/brows_neutral.png",
+      "group": "25_brows",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 25
+    },
+    {
+      "name": "mouth_closed",
+      "file": "parts/aligned-v1/mouth_closed.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 30
+    },
+    {
+      "name": "mouth_open_micro",
+      "file": "parts/aligned-v1/mouth_open_micro.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 31
+    },
+    {
+      "name": "mouth_open_small",
+      "file": "parts/aligned-v1/mouth_open_small.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 32
+    },
+    {
+      "name": "mouth_open_wide",
+      "file": "parts/aligned-v1/mouth_open_wide.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 33
+    },
+    {
+      "name": "mouth_vowel_a",
+      "file": "parts/aligned-v1/mouth_vowel_a.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 34
+    },
+    {
+      "name": "mouth_vowel_i",
+      "file": "parts/aligned-v1/mouth_vowel_i.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 35
+    },
+    {
+      "name": "mouth_vowel_u",
+      "file": "parts/aligned-v1/mouth_vowel_u.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 36
+    },
+    {
+      "name": "mouth_vowel_e",
+      "file": "parts/aligned-v1/mouth_vowel_e.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 37
+    },
+    {
+      "name": "mouth_vowel_o",
+      "file": "parts/aligned-v1/mouth_vowel_o.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 38
+    }
+  ],
+  "notes": [
+    "character-v10 preserves the approved v9 front, natural, and full-turn artwork.",
+    "A 62x18 micro-open mouth keyform bridges the closed and small-open mouth drawings.",
+    "The I vowel has no broad white teeth plane; only a tiny central pale glint remains.",
+    "Head turn review uses sixteen cached keyframes per direction and adjacent-frame interpolation.",
+    "Neutral neck atlases use 768x1024 frames; blink and mouth atlases contain cropped face patches only.",
+    "Right keyframes use v9 25 and 50 percent anchors; left keyframes interpolate to the approved natural-left endpoint.",
+    "The cached neck atlases are a web-review approximation, not Cubism ArtMeshes or deformers.",
+    "This PSD is layered animation material and has not been imported in Live2D Cubism."
+  ]
+}

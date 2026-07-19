@@ -1,0 +1,74 @@
+{
+  "status": "accepted_for_composite_review",
+  "source": "assets/character-v2/parts/accessory_head-v1-raw.png",
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "alpha_threshold": 32,
+  "components": {
+    "accessory_head": {
+      "source_bbox": [
+        507,
+        134,
+        1019,
+        1013
+      ],
+      "target_bbox": [
+        620,
+        130,
+        780,
+        400
+      ],
+      "output_bbox": [
+        622,
+        130,
+        779,
+        400
+      ],
+      "mode": "fit"
+    },
+    "earring_r": {
+      "source_bbox": [
+        63,
+        915,
+        153,
+        1171
+      ],
+      "target_bbox": [
+        425,
+        330,
+        470,
+        465
+      ],
+      "output_bbox": [
+        425,
+        334,
+        470,
+        462
+      ],
+      "mode": "fit"
+    },
+    "earring_l": {
+      "source_bbox": [
+        577,
+        915,
+        667,
+        1171
+      ],
+      "target_bbox": [
+        615,
+        330,
+        660,
+        465
+      ],
+      "output_bbox": [
+        615,
+        334,
+        660,
+        462
+      ],
+      "mode": "fit"
+    }
+  }
+}

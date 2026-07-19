@@ -1,0 +1,58 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "front_faceless_base",
+      "file": "master/front-faceless-v1.png",
+      "group": "10_base",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 10
+    },
+    {
+      "name": "eye_base_open",
+      "file": "parts/aligned-v1/eye_base_open.png",
+      "group": "20_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 20
+    },
+    {
+      "name": "irises",
+      "file": "parts/aligned-v1/irises.png",
+      "group": "20_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 21
+    },
+    {
+      "name": "brows_neutral",
+      "file": "parts/aligned-v1/brows_neutral.png",
+      "group": "25_brows",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 25
+    },
+    {
+      "name": "mouth_vowel_o",
+      "file": "parts/aligned-v1/mouth_vowel_o.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 37
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "status": "working_pose",
+  "direction_convention": "nose points toward viewer-left",
+  "source": "built-in ImageGen",
+  "generated_at": "2026-07-17",
+  "chroma_source": "view-left-3q-v1-chroma.png",
+  "transparent_asset": "view-left-3q-v1.png",
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "validation": {
+    "has_alpha": true,
+    "transparent_corners": true,
+    "alpha_bbox": [36, 81, 1038, 1448],
+    "subject_center": [537.0, 764.5],
+    "center_offset_from_front": [-5.0, 1.0]
+  },
+  "decision": "use_as_left_pose_base",
+  "strengths": [
+    "controlled three-quarter head turn",
+    "accessory placement is not mirrored",
+    "costume and palette remain close to the front master",
+    "subject scale and vertical placement are consistent"
+  ],
+  "known_issues": [
+    "the lower garment continues beyond the canvas",
+    "independent pose generation is not pixel-interpolatable with the front master and will be cross-faded rather than mesh-morphed"
+  ]
+}

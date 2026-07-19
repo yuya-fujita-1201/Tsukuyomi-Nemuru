@@ -1,0 +1,21 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "eye_base_open",
+      "file": "../parts/eye_base_open-v1-raw.png",
+      "group": "70_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 70
+    }
+  ],
+  "notes": [
+    "Built-in ImageGen open sclera, eyelid, and eyelash pair before guide alignment."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "mouth_open_wide",
+      "file": "../parts/candidates/mouth-open-wide-stretch/mouth_open_wide.png",
+      "group": "80_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 82
+    }
+  ],
+  "notes": [
+    "Built-in ImageGen wide open speaking mouth before guide alignment.",
+    "The generated 1085x1449 image was normalized to the canonical 1086x1448 canvas before alignment.",
+    "Aligned 1 regenerated parts to guide bounding boxes with mode=stretch, alpha_threshold=32."
+  ]
+}

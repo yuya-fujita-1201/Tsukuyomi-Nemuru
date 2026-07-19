@@ -1,0 +1,22 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "face_base",
+      "file": "../parts/candidates/face-stretch-cropped/face_base.png",
+      "group": "20_head",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 30
+    }
+  ],
+  "notes": [
+    "Raw ImageGen output with shoulder/chest alpha removed below y=1030 before guide alignment.",
+    "Aligned 1 regenerated parts to guide bounding boxes with mode=stretch, alpha_threshold=32."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "arm_r_base",
+  "status": "accepted",
+  "side_convention": "character-right, viewer-left in the front pose",
+  "source": "built-in ImageGen plus guide-bbox fit alignment",
+  "generated_at": "2026-07-17",
+  "raw_asset": "../arm_r_base-v1-raw.png",
+  "aligned_asset": "arm_r_base.png",
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "validation": {
+    "has_alpha": true,
+    "transparent_corners": true,
+    "alpha_bbox_threshold_32": [84, 570, 346, 1396],
+    "manifest_errors": 0,
+    "manifest_warnings": 0,
+    "contains_only_target_arm": true,
+    "has_shoulder_overlap": true,
+    "hand_is_not_cropped": true
+  },
+  "decision": "use_in_poc_and_layer_manifest",
+  "known_issues": [
+    "the fitted sleeve is narrower than the canonical sleeve",
+    "some fingers overlap in the relaxed hand silhouette"
+  ]
+}

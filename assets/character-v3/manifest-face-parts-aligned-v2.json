@@ -1,0 +1,75 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "eye_base_open",
+      "file": "parts/aligned-v2/eye_base_open.png",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 20
+    },
+    {
+      "name": "irises",
+      "file": "parts/aligned-v2/irises.png",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 21
+    },
+    {
+      "name": "eyes_closed",
+      "file": "parts/aligned-v2/eyes_closed.png",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 22
+    },
+    {
+      "name": "brows_neutral",
+      "file": "parts/aligned-v2/brows_neutral.png",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 25
+    },
+    {
+      "name": "mouth_closed",
+      "file": "parts/aligned-v2/mouth_closed.png",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 30
+    },
+    {
+      "name": "mouth_open_small",
+      "file": "parts/aligned-v2/mouth_open_small.png",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 31
+    },
+    {
+      "name": "mouth_open_wide",
+      "file": "parts/aligned-v2/mouth_open_wide.png",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 32
+    }
+  ],
+  "notes": [
+    "Raw ImageGen v2 facial parts after chroma-key removal; not yet aligned or approved.",
+    "Aligned 7 regenerated parts to guide bounding boxes with mode=fit, alpha_threshold=32."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "arm_r_base",
+      "file": "../parts/arm_r_base-v1-raw.png",
+      "group": "70_arms",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 70
+    }
+  ],
+  "notes": [
+    "Raw ImageGen character-right neutral arm before guide alignment."
+  ]
+}

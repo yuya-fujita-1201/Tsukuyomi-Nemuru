@@ -1,0 +1,21 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "face_base",
+      "file": "../parts/face_base-v1-raw.png",
+      "group": "20_head",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 30
+    }
+  ],
+  "notes": [
+    "Raw full face, neck, choker and shoulder output."
+  ]
+}

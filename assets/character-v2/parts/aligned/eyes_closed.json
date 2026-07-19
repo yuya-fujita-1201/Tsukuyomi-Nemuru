@@ -1,0 +1,25 @@
+{
+  "name": "eyes_closed",
+  "status": "accepted",
+  "source": "built-in ImageGen plus guide-bbox fit alignment",
+  "generated_at": "2026-07-17",
+  "raw_asset": "../eyes_closed-v1-raw.png",
+  "aligned_asset": "eyes_closed.png",
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "validation": {
+    "has_alpha": true,
+    "transparent_corners": true,
+    "alpha_bbox_threshold_32": [425, 388, 661, 416],
+    "pair_is_separated": true,
+    "contains_open_eye_pixels": false,
+    "blink_looks_natural": true
+  },
+  "motion_contract": {
+    "replaces_open_eye_stack": true,
+    "crossfade_duration_ms": 45
+  },
+  "decision": "use_as_closed_blink_state"
+}

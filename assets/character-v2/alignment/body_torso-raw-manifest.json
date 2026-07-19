@@ -1,0 +1,21 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "body_torso",
+      "file": "../parts/body_torso-v1-raw.png",
+      "group": "10_body",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 20
+    }
+  ],
+  "notes": [
+    "Raw ImageGen output before guide-bbox alignment."
+  ]
+}

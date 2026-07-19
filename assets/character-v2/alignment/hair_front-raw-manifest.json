@@ -1,0 +1,21 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "hair_front",
+      "file": "../parts/hair_front-v1-raw.png",
+      "group": "80_hair_front",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 90
+    }
+  ],
+  "notes": [
+    "Raw ImageGen front bangs and side locks before guide alignment."
+  ]
+}

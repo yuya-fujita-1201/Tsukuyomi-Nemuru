@@ -1,0 +1,21 @@
+{
+  "name": "eye_base_open",
+  "status": "accepted",
+  "source": "built-in ImageGen plus guide-bbox stretch alignment",
+  "generated_at": "2026-07-17",
+  "raw_asset": "../eye_base_open-v1-raw.png",
+  "aligned_asset": "eye_base_open.png",
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "validation": {
+    "has_alpha": true,
+    "transparent_corners": true,
+    "alpha_bbox_threshold_32": [425, 365, 661, 431],
+    "contains_sclera": true,
+    "contains_eyelids_and_lashes": true,
+    "contains_irises": false
+  },
+  "decision": "use_as_open_eye_base_below_moving_irises"
+}

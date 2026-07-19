@@ -1,0 +1,17 @@
+{
+  "name": "arm_l_base",
+  "status": "rejected",
+  "source": "built-in ImageGen plus guide-bbox fit alignment",
+  "generated_at": "2026-07-17",
+  "raw_asset": "arm_l_base-v1-raw.png",
+  "aligned_asset": "aligned/arm_l_base.png",
+  "validation": {
+    "has_alpha": true,
+    "transparent_corners": true,
+    "alpha_bbox_threshold_32": [741, 570, 999, 1396],
+    "manifest_errors": 0,
+    "manifest_warnings": 0
+  },
+  "decision": "reject_and_regenerate",
+  "failure": "The shoulder is on the outer viewer-right edge and the hand points inward toward the torso. The required orientation is shoulder near the torso on the bbox left and hand/fingers toward the viewer-right outer edge."
+}

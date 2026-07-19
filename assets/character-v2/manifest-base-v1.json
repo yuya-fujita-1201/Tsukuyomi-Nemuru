@@ -1,0 +1,106 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "hair_back",
+      "file": "parts/hair_back-v1.png",
+      "group": "10_hair_back",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 10
+    },
+    {
+      "name": "arm_r_base",
+      "file": "parts/aligned/arm_r_base-v2.png",
+      "group": "20_arms",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 20
+    },
+    {
+      "name": "arm_l_base",
+      "file": "parts/aligned/arm_l_base-v3.png",
+      "group": "20_arms",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 21
+    },
+    {
+      "name": "body_torso",
+      "file": "parts/aligned/body_torso.png",
+      "group": "30_body",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 30
+    },
+    {
+      "name": "face_base",
+      "file": "parts/aligned/face_base-v2.png",
+      "group": "40_head",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 40
+    },
+    {
+      "name": "hair_front",
+      "file": "parts/aligned/hair_front.png",
+      "group": "50_hair_front",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 50
+    },
+    {
+      "name": "earring_r",
+      "file": "parts/aligned/earring_r.png",
+      "group": "60_accessories",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 60
+    },
+    {
+      "name": "earring_l",
+      "file": "parts/aligned/earring_l.png",
+      "group": "60_accessories",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 61
+    },
+    {
+      "name": "accessory_head",
+      "file": "parts/aligned/accessory_head.png",
+      "group": "60_accessories",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 62
+    }
+  ],
+  "notes": [
+    "Base regenerated material before eyes and mouth are added.",
+    "arm_l_base uses the accepted corrected v2 asset.",
+    "Accessory source was generated once, then its three connected components were fit independently to canonical coordinates.",
+    "Arms are behind the torso so their hidden shoulder overlap is not visible.",
+    "The arm v2/v3 derivatives remove regenerated bare upper-arm underpaint that protruded beyond the torso.",
+    "face_base-v2 removes the rectangular lower underpaint while preserving the neck, choker, and pendant."
+  ]
+}

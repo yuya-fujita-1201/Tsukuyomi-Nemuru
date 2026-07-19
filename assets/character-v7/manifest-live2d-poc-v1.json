@@ -1,0 +1,94 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "front_faceless_base",
+      "file": "master/front-faceless-v1.png",
+      "group": "10_base",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 10
+    },
+    {
+      "name": "eye_base_open",
+      "file": "parts/aligned-v1/eye_base_open.png",
+      "group": "20_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 20
+    },
+    {
+      "name": "irises",
+      "file": "parts/aligned-v1/irises.png",
+      "group": "20_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 21
+    },
+    {
+      "name": "eyes_closed",
+      "file": "parts/aligned-v1/eyes_closed.png",
+      "group": "20_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 22
+    },
+    {
+      "name": "brows_neutral",
+      "file": "parts/aligned-v1/brows_neutral.png",
+      "group": "25_brows",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 25
+    },
+    {
+      "name": "mouth_closed",
+      "file": "parts/aligned-v1/mouth_closed.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 30
+    },
+    {
+      "name": "mouth_open_small",
+      "file": "parts/aligned-v1/mouth_open_small.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 31
+    },
+    {
+      "name": "mouth_open_wide",
+      "file": "parts/aligned-v1/mouth_open_wide.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 32
+    }
+  ],
+  "notes": [
+    "character-v7 preserves all approved character-v6 natural and full 3/4 poses.",
+    "The front open eyes are separated into eye_base_open and movable irises for two-axis gaze tracking.",
+    "The PixiJS review rig links neck turn to bilateral long-hair deformation; Cubism rigging remains unimplemented.",
+    "This PSD is layered animation material and has not been imported in Live2D Cubism."
+  ]
+}

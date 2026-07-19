@@ -1,0 +1,919 @@
+{
+  "frame_count": 64,
+  "tested_variants": 19,
+  "webp_finalists": [
+    "current",
+    "matched-weak_hull-d0-constant",
+    "matched-weak_hull-d1-constant",
+    "matched-weak_hull-d2-constant",
+    "matched-strong_hull-d2-constant",
+    "matched-strong_hull-d1-constant"
+  ],
+  "best": "matched-weak_hull-d0-constant",
+  "variants": {
+    "current": {
+      "center_mae_rgb": {
+        "mean": 0.13885743760064412,
+        "p95": 0.1668228175474552,
+        "max": 0.1709242180256673
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.007761606097203924,
+        "p95": 0.008302225150051237,
+        "max": 0.009332454984628898
+      },
+      "strong_purple_coverage": {
+        "mean": 0.8887954972188291,
+        "p95": 0.9162575481856019,
+        "max": 0.9286684782608695
+      },
+      "weak_purple_coverage": {
+        "mean": 0.6875129485472309,
+        "p95": 0.7409326424870466,
+        "max": 0.7481481481481481
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.0012470045173867813,
+        "p95": 0.00436351761933157,
+        "max": 0.007123287671232876
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.17151060802803367,
+        "p95": 0.20327559245508142,
+        "max": 0.2231974921630094
+      },
+      "support_area": {
+        "mean": 1758.65625,
+        "p95": 1914.0,
+        "max": 1974.0
+      },
+      "raw_score": 37.96124763522642,
+      "webp_center_mae_rgb": {
+        "mean": 0.37301265981066706,
+        "p95": 0.40638205728785437,
+        "max": 0.41475137851949445
+      },
+      "webp_center_changed_gt4_ratio": {
+        "mean": 0.03913512388376519,
+        "p95": 0.04477382520860782,
+        "max": 0.04636949202166594
+      },
+      "eye_atlas_bytes_total": 302080,
+      "score": 38.70727295484775
+    },
+    "matched-current_intersect-d0-constant": {
+      "center_mae_rgb": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "strong_purple_coverage": {
+        "mean": 0.8284893919719664,
+        "p95": 0.867336641001791,
+        "max": 0.8858695652173914
+      },
+      "weak_purple_coverage": {
+        "mean": 0.6248868428911998,
+        "p95": 0.682995760715968,
+        "max": 0.6925925925925925
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.17151060802803367,
+        "p95": 0.20327559245508142,
+        "max": 0.2231974921630094
+      },
+      "support_area": {
+        "mean": 1566.859375,
+        "p95": 1719.1499999999999,
+        "max": 1777.0
+      },
+      "raw_score": 45.55551631887074
+    },
+    "matched-current_intersect-d0-telea": {
+      "center_mae_rgb": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "strong_purple_coverage": {
+        "mean": 0.8284893919719664,
+        "p95": 0.867336641001791,
+        "max": 0.8858695652173914
+      },
+      "weak_purple_coverage": {
+        "mean": 0.6248868428911998,
+        "p95": 0.682995760715968,
+        "max": 0.6925925925925925
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.6539132356042758,
+        "p95": 0.7803099502944133,
+        "max": 0.8203856749311295
+      },
+      "support_area": {
+        "mean": 1566.859375,
+        "p95": 1719.1499999999999,
+        "max": 1777.0
+      },
+      "raw_score": 93.79577907649495
+    },
+    "matched-current_intersect-d1-constant": {
+      "center_mae_rgb": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "strong_purple_coverage": {
+        "mean": 0.8887954972188291,
+        "p95": 0.9162575481856019,
+        "max": 0.9286684782608695
+      },
+      "weak_purple_coverage": {
+        "mean": 0.6875129485472309,
+        "p95": 0.7409326424870466,
+        "max": 0.7481481481481481
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.0012470045173867813,
+        "p95": 0.00436351761933157,
+        "max": 0.007123287671232876
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.11666100748336533,
+        "p95": 0.13365565273728539,
+        "max": 0.4934169278996865
+      },
+      "support_area": {
+        "mean": 1758.65625,
+        "p95": 1914.0,
+        "max": 1974.0
+      },
+      "raw_score": 32.1985727055583
+    },
+    "matched-current_intersect-d1-telea": {
+      "center_mae_rgb": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "strong_purple_coverage": {
+        "mean": 0.8887954972188291,
+        "p95": 0.9162575481856019,
+        "max": 0.9286684782608695
+      },
+      "weak_purple_coverage": {
+        "mean": 0.6875129485472309,
+        "p95": 0.7409326424870466,
+        "max": 0.7481481481481481
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.0012470045173867813,
+        "p95": 0.00436351761933157,
+        "max": 0.007123287671232876
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.5435132395172988,
+        "p95": 0.6533230043142739,
+        "max": 0.6835675015271838
+      },
+      "support_area": {
+        "mean": 1758.65625,
+        "p95": 1914.0,
+        "max": 1974.0
+      },
+      "raw_score": 74.88379590895164
+    },
+    "matched-current_intersect-d2-constant": {
+      "center_mae_rgb": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "strong_purple_coverage": {
+        "mean": 0.9386957415678077,
+        "p95": 0.9545524043612754,
+        "max": 0.9619565217391305
+      },
+      "weak_purple_coverage": {
+        "mean": 0.7440094437329804,
+        "p95": 0.7942796758415422,
+        "max": 0.7957813998082455
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.007667495621226749,
+        "p95": 0.016167211705033435,
+        "max": 0.0192497532082922
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.06724077880836794,
+        "p95": 0.07759887005649717,
+        "max": 0.46018808777429465
+      },
+      "support_area": {
+        "mean": 1958.453125,
+        "p95": 2116.85,
+        "max": 2179.0
+      },
+      "raw_score": 20.76424528070342
+    },
+    "matched-current_intersect-d2-telea": {
+      "center_mae_rgb": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "strong_purple_coverage": {
+        "mean": 0.9386957415678077,
+        "p95": 0.9545524043612754,
+        "max": 0.9619565217391305
+      },
+      "weak_purple_coverage": {
+        "mean": 0.7440094437329804,
+        "p95": 0.7942796758415422,
+        "max": 0.7957813998082455
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.007667495621226749,
+        "p95": 0.016167211705033435,
+        "max": 0.0192497532082922
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.4765138830819793,
+        "p95": 0.5596461942601137,
+        "max": 0.6003391746749576
+      },
+      "support_area": {
+        "mean": 1958.453125,
+        "p95": 2116.85,
+        "max": 2179.0
+      },
+      "raw_score": 61.691555708064556
+    },
+    "matched-strong_hull-d0-constant": {
+      "center_mae_rgb": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "strong_purple_coverage": {
+        "mean": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "weak_purple_coverage": {
+        "mean": 0.7904613316718514,
+        "p95": 0.8295976762443084,
+        "max": 0.8304286387187941
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "support_area": {
+        "mean": 1982.546875,
+        "p95": 2154.75,
+        "max": 2227.0
+      },
+      "raw_score": 6.286160049844458
+    },
+    "matched-strong_hull-d0-telea": {
+      "center_mae_rgb": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "strong_purple_coverage": {
+        "mean": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "weak_purple_coverage": {
+        "mean": 0.7904613316718514,
+        "p95": 0.8295976762443084,
+        "max": 0.8304286387187941
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.23699192957094445,
+        "p95": 0.3334924099450233,
+        "max": 0.39184952978056425
+      },
+      "support_area": {
+        "mean": 1982.546875,
+        "p95": 2154.75,
+        "max": 2227.0
+      },
+      "raw_score": 29.985353006938904
+    },
+    "matched-strong_hull-d1-constant": {
+      "center_mae_rgb": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "strong_purple_coverage": {
+        "mean": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "weak_purple_coverage": {
+        "mean": 0.8462228717736948,
+        "p95": 0.8775317946302402,
+        "max": 0.8813333333333333
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "support_area": {
+        "mean": 2199.140625,
+        "p95": 2378.75,
+        "max": 2451.0
+      },
+      "raw_score": 4.613313846789156,
+      "webp_center_mae_rgb": {
+        "mean": 0.20694413946225537,
+        "p95": 0.2358079588152052,
+        "max": 0.23788610745132485
+      },
+      "webp_center_changed_gt4_ratio": {
+        "mean": 0.030452280961791832,
+        "p95": 0.037800102474015516,
+        "max": 0.0386839408578539
+      },
+      "eye_atlas_bytes_total": 202468,
+      "score": 5.027202125713667
+    },
+    "matched-strong_hull-d1-telea": {
+      "center_mae_rgb": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "strong_purple_coverage": {
+        "mean": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "weak_purple_coverage": {
+        "mean": 0.8462228717736948,
+        "p95": 0.8775317946302402,
+        "max": 0.8813333333333333
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.19579366277593613,
+        "p95": 0.29046032568467794,
+        "max": 0.3228029867892016
+      },
+      "support_area": {
+        "mean": 2199.140625,
+        "p95": 2378.75,
+        "max": 2451.0
+      },
+      "raw_score": 24.19268012438277
+    },
+    "matched-strong_hull-d2-constant": {
+      "center_mae_rgb": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "strong_purple_coverage": {
+        "mean": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "weak_purple_coverage": {
+        "mean": 0.8929021349910269,
+        "p95": 0.9156853509185116,
+        "max": 0.9191111111111111
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.007621550052510119,
+        "p95": 0.012534263607133767,
+        "max": 0.01598721023181455
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "support_area": {
+        "mean": 2423.734375,
+        "p95": 2610.75,
+        "max": 2683.0
+      },
+      "raw_score": 3.441582451844497,
+      "webp_center_mae_rgb": {
+        "mean": 0.22615096465866394,
+        "p95": 0.25808019811643,
+        "max": 0.26171131605914216
+      },
+      "webp_center_changed_gt4_ratio": {
+        "mean": 0.03312907151222369,
+        "p95": 0.04142146098667837,
+        "max": 0.042526716439759915
+      },
+      "eye_atlas_bytes_total": 218066,
+      "score": 3.8938843811618247
+    },
+    "matched-strong_hull-d2-telea": {
+      "center_mae_rgb": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "strong_purple_coverage": {
+        "mean": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "weak_purple_coverage": {
+        "mean": 0.8929021349910269,
+        "p95": 0.9156853509185116,
+        "max": 0.9191111111111111
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.007621550052510119,
+        "p95": 0.012534263607133767,
+        "max": 0.01598721023181455
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.17175193599149052,
+        "p95": 0.2572336740728225,
+        "max": 0.27335423197492165
+      },
+      "support_area": {
+        "mean": 2423.734375,
+        "p95": 2610.75,
+        "max": 2683.0
+      },
+      "raw_score": 20.616776050993554
+    },
+    "matched-weak_hull-d0-constant": {
+      "center_mae_rgb": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "strong_purple_coverage": {
+        "mean": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "weak_purple_coverage": {
+        "mean": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "support_area": {
+        "mean": 2689.5625,
+        "p95": 2970.0499999999997,
+        "max": 3010.0
+      },
+      "raw_score": 0.0,
+      "webp_center_mae_rgb": {
+        "mean": 0.25217986019616456,
+        "p95": 0.2905016347045332,
+        "max": 0.2966378763480213
+      },
+      "webp_center_changed_gt4_ratio": {
+        "mean": 0.03699815180793442,
+        "p95": 0.04503001024740155,
+        "max": 0.04614990484555702
+      },
+      "eye_atlas_bytes_total": 233368,
+      "score": 0.5043597203923291
+    },
+    "matched-weak_hull-d0-telea": {
+      "center_mae_rgb": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "strong_purple_coverage": {
+        "mean": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "weak_purple_coverage": {
+        "mean": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.08462610504089876,
+        "p95": 0.16656392820365906,
+        "max": 0.18546365914786966
+      },
+      "support_area": {
+        "mean": 2689.5625,
+        "p95": 2970.0499999999997,
+        "max": 3010.0
+      },
+      "raw_score": 8.462610504089877
+    },
+    "matched-weak_hull-d1-constant": {
+      "center_mae_rgb": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "strong_purple_coverage": {
+        "mean": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "weak_purple_coverage": {
+        "mean": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "support_area": {
+        "mean": 2940.21875,
+        "p95": 3231.45,
+        "max": 3276.0
+      },
+      "raw_score": 0.0,
+      "webp_center_mae_rgb": {
+        "mean": 0.27415173016395844,
+        "p95": 0.3143414824574245,
+        "max": 0.3206338749817011
+      },
+      "webp_center_changed_gt4_ratio": {
+        "mean": 0.04012155065144196,
+        "p95": 0.049712706777924165,
+        "max": 0.05065144195578978
+      },
+      "eye_atlas_bytes_total": 252124,
+      "score": 0.5483034603279169
+    },
+    "matched-weak_hull-d1-telea": {
+      "center_mae_rgb": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "strong_purple_coverage": {
+        "mean": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "weak_purple_coverage": {
+        "mean": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.08575211223409812,
+        "p95": 0.187326411719839,
+        "max": 0.23137535816618912
+      },
+      "support_area": {
+        "mean": 2940.21875,
+        "p95": 3231.45,
+        "max": 3276.0
+      },
+      "raw_score": 8.575211223409813
+    },
+    "matched-weak_hull-d2-constant": {
+      "center_mae_rgb": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "strong_purple_coverage": {
+        "mean": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "weak_purple_coverage": {
+        "mean": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.08095068762361765,
+        "p95": 0.08477851902241215,
+        "max": 0.08525345622119816
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "support_area": {
+        "mean": 3198.875,
+        "p95": 3500.8499999999995,
+        "max": 3550.0
+      },
+      "raw_score": 2.4285206287085295,
+      "webp_center_mae_rgb": {
+        "mean": 0.29812618943053726,
+        "p95": 0.34421936758893285,
+        "max": 0.3493509979017225
+      },
+      "webp_center_changed_gt4_ratio": {
+        "mean": 0.04352000530669009,
+        "p95": 0.05273203044942175,
+        "max": 0.055189576928707365
+      },
+      "eye_atlas_bytes_total": 268400,
+      "score": 3.024773007569604
+    },
+    "matched-weak_hull-d2-telea": {
+      "center_mae_rgb": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "center_changed_gt2_ratio": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "strong_purple_coverage": {
+        "mean": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "weak_purple_coverage": {
+        "mean": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "geometry_spill_outside_ideal": {
+        "mean": 0.08095068762361765,
+        "p95": 0.08477851902241215,
+        "max": 0.08525345622119816
+      },
+      "base_residual_strong_purple": {
+        "mean": 0.08883160679791086,
+        "p95": 0.18898400540662308,
+        "max": 0.24570200573065903
+      },
+      "support_area": {
+        "mean": 3198.875,
+        "p95": 3500.8499999999995,
+        "max": 3550.0
+      },
+      "raw_score": 11.311681308499615
+    }
+  },
+  "raw_ranking": [
+    {
+      "name": "matched-weak_hull-d0-constant",
+      "score": 0.0
+    },
+    {
+      "name": "matched-weak_hull-d1-constant",
+      "score": 0.0
+    },
+    {
+      "name": "matched-weak_hull-d2-constant",
+      "score": 2.4285206287085295
+    },
+    {
+      "name": "matched-strong_hull-d2-constant",
+      "score": 3.441582451844497
+    },
+    {
+      "name": "matched-strong_hull-d1-constant",
+      "score": 4.613313846789156
+    },
+    {
+      "name": "matched-strong_hull-d0-constant",
+      "score": 6.286160049844458
+    },
+    {
+      "name": "matched-weak_hull-d0-telea",
+      "score": 8.462610504089877
+    },
+    {
+      "name": "matched-weak_hull-d1-telea",
+      "score": 8.575211223409813
+    },
+    {
+      "name": "matched-weak_hull-d2-telea",
+      "score": 11.311681308499615
+    },
+    {
+      "name": "matched-strong_hull-d2-telea",
+      "score": 20.616776050993554
+    },
+    {
+      "name": "matched-current_intersect-d2-constant",
+      "score": 20.76424528070342
+    },
+    {
+      "name": "matched-strong_hull-d1-telea",
+      "score": 24.19268012438277
+    },
+    {
+      "name": "matched-strong_hull-d0-telea",
+      "score": 29.985353006938904
+    },
+    {
+      "name": "matched-current_intersect-d1-constant",
+      "score": 32.1985727055583
+    },
+    {
+      "name": "current",
+      "score": 37.96124763522642
+    },
+    {
+      "name": "matched-current_intersect-d0-constant",
+      "score": 45.55551631887074
+    },
+    {
+      "name": "matched-current_intersect-d2-telea",
+      "score": 61.691555708064556
+    },
+    {
+      "name": "matched-current_intersect-d1-telea",
+      "score": 74.88379590895164
+    },
+    {
+      "name": "matched-current_intersect-d0-telea",
+      "score": 93.79577907649495
+    }
+  ],
+  "final_ranking": [
+    {
+      "name": "matched-weak_hull-d0-constant",
+      "score": 0.5043597203923291
+    },
+    {
+      "name": "matched-weak_hull-d1-constant",
+      "score": 0.5483034603279169
+    },
+    {
+      "name": "matched-weak_hull-d2-constant",
+      "score": 3.024773007569604
+    },
+    {
+      "name": "matched-strong_hull-d2-constant",
+      "score": 3.8938843811618247
+    },
+    {
+      "name": "matched-strong_hull-d1-constant",
+      "score": 5.027202125713667
+    },
+    {
+      "name": "current",
+      "score": 38.70727295484775
+    }
+  ],
+  "notes": {
+    "center_error": "eye ROI RGB diff after neutral+base+iris at zero gaze",
+    "webp_error": "actual 4x4 eye atlas WebP q94 method6 roundtrip over existing neutral atlas",
+    "base_residual": "strong purple still present after blank base only",
+    "geometry_spill": "moving ownership outside weak-purple hull +1px"
+  }
+}

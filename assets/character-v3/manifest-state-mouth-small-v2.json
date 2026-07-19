@@ -1,0 +1,94 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "front_faceless_base",
+      "file": "master/front-faceless-v1.png",
+      "group": "10_base",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 10
+    },
+    {
+      "name": "eye_base_open",
+      "file": "parts/aligned-v2/eye_base_open.png",
+      "group": "20_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 20
+    },
+    {
+      "name": "irises",
+      "file": "parts/aligned-v2/irises.png",
+      "group": "20_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 21
+    },
+    {
+      "name": "eyes_closed",
+      "file": "parts/aligned-v2/eyes_closed.png",
+      "group": "20_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 22
+    },
+    {
+      "name": "brows_neutral",
+      "file": "parts/aligned-v2/brows_neutral.png",
+      "group": "25_brows",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 25
+    },
+    {
+      "name": "mouth_closed",
+      "file": "parts/aligned-v2/mouth_closed.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 30
+    },
+    {
+      "name": "mouth_open_small",
+      "file": "parts/aligned-v2/mouth_open_small.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 31
+    },
+    {
+      "name": "mouth_open_wide",
+      "file": "parts/aligned-v2/mouth_open_wide.png",
+      "group": "30_mouth",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": false,
+      "order": 32
+    }
+  ],
+  "notes": [
+    "The coherent front master remains a single silhouette to preserve the approved slim proportions.",
+    "Only eyes, brows, and mouth expression art is overlaid for animation.",
+    "eyes_closed, mouth_open_small, and mouth_open_wide are hidden alternates.",
+    "This PSD is a layered animation material and has not been rigged in Live2D Cubism."
+  ]
+}

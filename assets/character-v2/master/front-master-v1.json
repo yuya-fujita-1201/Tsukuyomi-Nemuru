@@ -1,0 +1,23 @@
+{
+  "status": "candidate",
+  "source": "built-in ImageGen",
+  "generated_at": "2026-07-17",
+  "chroma_source": "front-master-v1-chroma.png",
+  "transparent_asset": "front-master-v1.png",
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "validation": {
+    "has_alpha": true,
+    "transparent_corners": true,
+    "alpha_bbox": [24, 62, 1054, 1448]
+  },
+  "decision": "comparison_only",
+  "issues": [
+    "facial identity is more generic than the original reference",
+    "hair and clothing touch the bottom canvas edge",
+    "framing is wider than the intended YouTube bust-up master",
+    "costume contains more small ornaments than desirable for part separation"
+  ]
+}

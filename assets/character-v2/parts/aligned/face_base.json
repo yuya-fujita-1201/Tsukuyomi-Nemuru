@@ -1,0 +1,29 @@
+{
+  "name": "face_base",
+  "status": "accepted",
+  "source": "built-in ImageGen plus non-target alpha cleanup and guide-bbox fit alignment",
+  "generated_at": "2026-07-17",
+  "raw_asset": "../face_base-v1-raw.png",
+  "clean_raw_asset": "../face_base-v1-clean-raw.png",
+  "aligned_asset": "face_base.png",
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "validation": {
+    "has_alpha": true,
+    "transparent_corners": true,
+    "alpha_bbox_threshold_32": [382, 205, 703, 721],
+    "subject_center": [542.5, 463.0],
+    "manifest_errors": 0,
+    "manifest_warnings": 0,
+    "eye_regions_are_blank": true,
+    "mouth_region_is_blank": true,
+    "contains_neck_overlap": true
+  },
+  "decision": "use_in_poc_and_layer_manifest",
+  "known_issues": [
+    "the regenerated blank face is slightly narrower than the visible canonical face",
+    "front hair and facial feature placement must be judged together in the composite"
+  ]
+}

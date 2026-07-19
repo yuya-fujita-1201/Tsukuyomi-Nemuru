@@ -1,0 +1,25 @@
+{
+  "name": "mouth_open_small",
+  "status": "accepted",
+  "source": "built-in ImageGen plus guide-bbox fit alignment",
+  "generated_at": "2026-07-17",
+  "raw_asset": "../mouth_open_small-v1-raw.png",
+  "aligned_asset": "mouth_open_small.png",
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "validation": {
+    "has_alpha": true,
+    "transparent_corners": true,
+    "alpha_bbox_threshold_32": [523, 510, 563, 559],
+    "contains_teeth": false,
+    "contains_tongue": true,
+    "small_open_shape_is_distinct": true
+  },
+  "motion_contract": {
+    "rms_range": [0.12, 0.45],
+    "viseme": "small_open"
+  },
+  "decision": "use_as_low_to_medium_speech_mouth"
+}

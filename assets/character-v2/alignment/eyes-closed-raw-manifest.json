@@ -1,0 +1,21 @@
+{
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "layers": [
+    {
+      "name": "eyes_closed",
+      "file": "../parts/eyes_closed-v1-raw.png",
+      "group": "70_eyes",
+      "left": 0,
+      "top": 0,
+      "opacity": 255,
+      "visible": true,
+      "order": 73
+    }
+  ],
+  "notes": [
+    "Built-in ImageGen closed eyelid and eyelash pair before guide alignment."
+  ]
+}

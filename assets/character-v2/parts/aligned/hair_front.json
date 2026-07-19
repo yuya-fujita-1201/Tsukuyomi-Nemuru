@@ -1,0 +1,26 @@
+{
+  "name": "hair_front",
+  "status": "accepted",
+  "source": "built-in ImageGen plus guide-bbox fit alignment",
+  "generated_at": "2026-07-17",
+  "raw_asset": "../hair_front-v1-raw.png",
+  "aligned_asset": "hair_front.png",
+  "canvas": {
+    "width": 1086,
+    "height": 1448
+  },
+  "validation": {
+    "has_alpha": true,
+    "transparent_corners": true,
+    "alpha_bbox_threshold_32": [341, 65, 746, 971],
+    "subject_center": [543.5, 518.0],
+    "contains_only_target_part": true,
+    "has_crown_overlap": true,
+    "has_face_and_shoulder_overlap": true
+  },
+  "decision": "use_in_poc_and_layer_manifest",
+  "known_issues": [
+    "the fit-aligned part is narrower than the original raw generation",
+    "the final visible match still depends on regenerated eyes, mouth, and head accessory"
+  ]
+}
