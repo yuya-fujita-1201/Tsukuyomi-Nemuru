@@ -9,6 +9,8 @@
 （`chore: preserve reviewed v14 baseline`）としてpushし、local / `git ls-remote` / GitHub APIの
 SHA一致を確認した。その後の監視実装は `agent/motion-performance-loop` で行い、
 `54c4a07`（監視基盤）と `4712343`（断続warning保持）へ分けてlocal commitした。
+正式baselineと本節は `dfbf463` に記録し、同branchをGitHubへpushした。push時点のlocal、
+`git ls-remote`、GitHub APIは `dfbf463ff9b769aa6f21aae7eb2f08ac480a8976` で一致した。
 
 `test/e2e_ai_motion_perf.py` はSystem Chromeの実tickerを止めず、`whisper` 13秒演技を2周する。
 音声OFF/ONはfresh pageへ分離し、rAF、Long Task、body/head atlas step、target-current追従誤差、
